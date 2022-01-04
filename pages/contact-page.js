@@ -4,9 +4,9 @@ import Image from "next/image";
 const Contact = () => {
   return (
     <Layout title="Contact">
-      <div className="bg-white text-center shadow-xl p-8 w-80 rounded">
+      <div className="bg-white text-center shadow-2xl p-8 w-80 rounded">
         <div className="mt-4">
-          <p className="font-bold">Contact infomation</p>
+          <p className="font-bold">INFOMATION</p>
         </div>
         <div className="flex justify-center mt-4">
           <Image
@@ -18,14 +18,14 @@ const Contact = () => {
           />
         </div>
         <div className="mt-4">
-          <p className="font-bold">name</p>
-          <p className="text-xs mt-2 text-gray-600">Yuta Nakamura</p>
+          <p className="font-bold">Name</p>
+          <p className="text-xs mt-2 text-gray-800">Yuta Nakamura</p>
           <p className="font-bold mt-3">Age</p>
-          <p className="text-xs mt-2 text-gray-600">26</p>
+          <p className="text-xs mt-2 text-gray-800">26</p>
           <p className="font-bold mt-3">E-mail</p>
-          <p className="text-xs mt-2 text-gray-600">n.you0611@gmail.com</p>
+          <p className="text-xs mt-2 text-gray-800">n.you0611@gmail.com</p>
           <p className="font-bold mt-2">Phone</p>
-          <p className="text-xs mt-2 text-gray-600">080-1503-6453</p>
+          <p className="text-xs mt-2 text-gray-800">080-1503-6453</p>
         </div>
         <div className="mt-6 flex justify-around">
         <div>
