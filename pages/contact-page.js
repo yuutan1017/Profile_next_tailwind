@@ -18,7 +18,9 @@ const Contact = () => {
           />
         </div>
         <div className="mt-4">
-          <p className="font-bold">Age</p>
+          <p className="font-bold">name</p>
+          <p className="text-xs mt-2 text-gray-600">Yuta Nakamura</p>
+          <p className="font-bold mt-3">Age</p>
           <p className="text-xs mt-2 text-gray-600">26</p>
           <p className="font-bold mt-3">E-mail</p>
           <p className="text-xs mt-2 text-gray-600">n.you0611@gmail.com</p>
