@@ -35,7 +35,7 @@ const Contact = () => {
               rel="noopener noreferrer"
             >
               <svg
-                className="w-8 h-8 mr-3 text-gray-500"
+                className="w-8 h-8 items-center text-gray-500"
                 fill="currentColor"
                 viewBox="0 0 512 512"
                 xmlns="http://www.w3.org/2000/svg"
