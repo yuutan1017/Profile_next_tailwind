@@ -12,7 +12,7 @@ export default function Layout({ children, title = "Ylog" }) {
         <nav className="bg-gray-700 w-screen">
           <div className="flex items-center pl-8 h-14">
             <Link href="/">
-              <a className="text-white text-xl ml-10">YBlog</a>
+              <a className="text-white text-xl ml-10">Ylog</a>
             </Link>
             <div className="flex space-x-4 ml-auto mr-10">
               <Link href="/">
