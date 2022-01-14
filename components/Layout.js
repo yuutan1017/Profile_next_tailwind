@@ -15,7 +15,7 @@ export default function Layout({ children, title = "Ylog" }) {
               <a className="text-white text-xl ml-10">Ylog</a>
             </Link>
             <div className="flex space-x-4 ml-auto mr-10">
-              <Link href="/blog-page">
+              <Link href="/portfolio-page">
                 <a className="text-white hover:bg-gray-600 px-3 py-2 rounded">
                   Portfolio
                 </a>

@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 export default function HomePage() {
     return (
     <motion.h1
+        title="HomePage"
         className="text-center text-5xl font-sans my-3"
         animate={{ 
             x: [0, 100, 0]
