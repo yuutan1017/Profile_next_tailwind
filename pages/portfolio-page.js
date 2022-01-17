@@ -1,23 +1,26 @@
-import React from "react";
-import Layout from "../components/Layout";
-import { motion, AnimatePresence } from "framer-motion";
+import React from 'react'
+import { motion } from 'framer-motion'
 
+import Layout from '../components/Layout'
 
 const Portfolio = () => {
     return (
-        <Layout title="Portfolio">
-            <motion.div>
-                <motion.h5>subtitle</motion.h5>
-                <motion.h2>title</motion.h2>
+        <Layout title='Portfolio' className="p-0 box-border">
+            <motion.div 
+                className='w-48 h-48 bg-green-400 flex flex-col items-center justify-center mr-auto ml-20'
+                animate={{
+                    x: "50rem",
+                    opacity: 1,
+                }}
+                initial={{
+                    opacity: 0.1,
+                }}
+                transition={{
+                    type: "spring",
+                    stifiness: 500,
+                }}
+            >
             </motion.div>
-
-            <AnimatePresence>
-                <motion.div>
-                <motion.h5>subtitle</motion.h5>
-                <motion.h2>title</motion.h2>
-                <motion.button>button</motion.button>
-                </motion.div>
-            </AnimatePresence>
         </Layout>
     )
 }

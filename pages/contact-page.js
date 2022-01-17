@@ -1,10 +1,24 @@
 import Layout from "../components/Layout";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 const Contact = () => {
   return (
     <Layout title="Contact">
-      <div className="bg-white text-center shadow-2xl p-8 w-80 rounded">
+      <motion.div 
+        className="bg-white text-center shadow-2xl p-8 w-80 rounded"
+        animate={{ 
+          x: [0, 100, 0],
+          opacity: 1
+        }}
+        transition={{
+          duration: 2,
+          times: [0, 0.2, 1]
+        }}
+        initial={{
+          opacity: 0.1
+        }}
+      >
         <div className="mt-4">
           <p className="font-bold">INFOMATION</p>
         </div>
@@ -45,7 +59,7 @@ const Contact = () => {
             </a>
           </div>
         </div>
-      </div>
+      </motion.div>
     </Layout>
   )
 }
