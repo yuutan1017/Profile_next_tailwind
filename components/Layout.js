@@ -20,9 +20,9 @@ export default function Layout({ children, title = "Ylog" }) {
                   Portfolio
                 </a>
               </Link>
-              <Link href="/contact-page">
+              <Link href="/profile-page">
                 <a className="text-white hover:bg-gray-600 px-3 py-2 rounded">
-                  Contact
+                  Profile
                 </a>
               </Link>
             </div>
