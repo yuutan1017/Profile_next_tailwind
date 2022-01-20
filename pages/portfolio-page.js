@@ -14,7 +14,8 @@ function Portfolio() {
             transition: {
                 delay: 0.5,
                 when: "beforeChildren",
-            }
+                staggerChildren: 0.2
+            },
         },
     }
 
@@ -26,7 +27,6 @@ function Portfolio() {
         visible: {
             x : 0,
             opacity: 1,
-            staggerChildren: 0.2
         },
     }
 
