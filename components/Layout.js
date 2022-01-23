@@ -29,7 +29,7 @@ export default function Layout({ children, title = "Ylog" }) {
           </div>
         </nav>
       </header>
-      <main className="flex flex-1 justify-center items-center flex-col w-screen from-teal-400 bg-indigo-200">
+      <main className="flex flex-1 justify-center items-center flex-col w-screen from-teal-400 bg-black">
         {children}
       </main>
       <footer className="w-full h-10 flex justify-center items-center border-t-4">
