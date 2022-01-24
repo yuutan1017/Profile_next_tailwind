@@ -3,13 +3,23 @@ import Layout from "../components/Layout";
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
+{/* <div class="md:flex">
+  <div class="md:flex-shrink-0">
+    <img class="rounded-lg md:w-56" src="https://images.unsplash.com/photo-1556740738-b6a63e27c4df?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=448&q=80" width="448" height="299" alt="Woman paying for a purchase">
+  </div>
+  <div class="mt-4 md:mt-0 md:ml-6">
+    <div class="uppercase tracking-wide text-sm text-indigo-600 font-bold">Marketing</div>
+    <a href="#" class="block mt-1 text-lg leading-tight font-semibold text-gray-900 hover:underline">Finding customers for your new business</a>
+    <p class="mt-2 text-gray-600">Getting a new business off the ground is a lot of hard work. Here are five ideas you can use to find your first customers.</p>
+  </div>
+</div> */}
 
 const Profile = () => {
 
   return (
     <Layout title="Profile">
       <motion.div 
-        className="bg-white text-center shadow-2xl p-8 w-80 rounded"
+        className="bg-white text-center shadow-2xl p-8 w-96 rounded"
         animate={{
           opacity: 1
         }}
@@ -42,7 +52,7 @@ const Profile = () => {
           <p className="text-xs mt-2 text-gray-800">n.you0611@gmail.com</p>
           <p className="font-bold mt-2">Phone</p>
           <p className="text-xs mt-2 text-gray-800">080-1503-6453</p>
-          <p className="font-bold mt-5">Link</p>
+          <p className="font-bold mt-5">Links</p>
         </div>
         <div className="mt-2 flex justify-around">
           <motion.a

@@ -2,11 +2,11 @@ import React from 'react'
 
 import Layout from '../components/Layout'
 
-export default function Portfolio() {
+export default function Works() {
     return (
         <Layout>
             <div className='justify-center text-center'>
-                Portfolio
+                works_page
             </div>
         </Layout>
     );

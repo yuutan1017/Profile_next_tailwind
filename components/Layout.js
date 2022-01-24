@@ -15,14 +15,24 @@ export default function Layout({ children, title = "Ylog" }) {
               <a className="text-white text-xl ml-10">Ylog</a>
             </Link>
             <div className="flex space-x-4 ml-auto mr-10">
-              <Link href="/portfolio-page">
+              <Link href="/">
                 <a className="text-white hover:bg-gray-600 px-3 py-2 rounded">
-                  Portfolio
+                  Home
                 </a>
               </Link>
               <Link href="/profile-page">
                 <a className="text-white hover:bg-gray-600 px-3 py-2 rounded">
-                  Profile
+                  About
+                </a>
+              </Link>
+              <Link href="/skills-page">
+                <a className="text-white hover:bg-gray-600 px-3 py-2 rounded">
+                  Skills
+                </a>
+              </Link>
+              <Link href="/contact-page">
+                <a className="text-white hover:bg-gray-600 px-3 py-2 rounded">
+                  Contact
                 </a>
               </Link>
             </div>

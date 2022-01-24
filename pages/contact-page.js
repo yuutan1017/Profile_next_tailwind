@@ -69,7 +69,7 @@ export default function Contact() {
                         for="message"
                         class="block mb-2 text-sm text-gray-600"
                       >
-                        内容
+                        お問合せ内容
                         <span class="text-xs text-red-500">(必須)</span>
                       </label>
                       <textarea
