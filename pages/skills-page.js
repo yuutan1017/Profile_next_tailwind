@@ -11,8 +11,8 @@ export default function Skills() {
       <div className="flex flex-wrap justify-center">
 
         <div className="basis-64 shrink-0 grow-0 py-2 px-4 rounded-md m-5">
-          <div className="flex justify-between align-center py-2 px-1 mb-3 font-nomal color-[#666]" > 
-            <p className="">python</p>
+          <div className="flex justify-between align-center py-2 px-1 font-nomal color-[#666]"> 
+            <img src="https://img.icons8.com/color/48/000000/python--v1.png"/>         
           </div>
           <ProgressBar
             radius={100}
