@@ -84,7 +84,7 @@ export default function Contact() {
                     <div class="mb-3">
                       <button
                         type="submit"
-                        class="w-full px-1 py-4 font-bold text-white bg-green-500 rounded-md focus:bg-green-600 focus:outline-none"
+                        class="w-full px-1 py-4 font-bold text-white bg-blue-400 rounded-md focus:bg-blue-100 focus:outline-none"
                       >
                         送信する
                       </button>

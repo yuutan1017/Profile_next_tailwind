@@ -39,10 +39,10 @@ export default function Layout({ children, title = "Ylog" }) {
           </div>
         </nav>
       </header>
-      <main className="flex flex-1 justify-center items-center flex-col w-screen from-teal-400 bg-gradient-to-r from-white to-blue-300">
+      <main className="flex flex-1 justify-center items-center flex-col w-screen from-teal-400 bg-white">
         {children}
       </main>
-      <footer className="w-full h-10 flex justify-center items-center border-t-4">
+      <footer className="w-full h-10 flex justify-center items-center border-t-4 bg-blue-200">
         <a className="flex items-center">copyright@2022 yuutan</a>
       </footer>
     </div>
