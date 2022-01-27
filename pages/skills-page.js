@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import ProgressBar from "react-customizable-progressbar";
 
 import Layout from "../components/Layout";
@@ -9,11 +9,7 @@ export default function Skills() {
   return (
     <Layout>
       <div className="flex flex-wrap justify-center">
-
         <div className="basis-64 shrink-0 grow-0 py-2 px-4 rounded-md m-5">
-          <div className="flex justify-between align-center py-2 px-1 font-nomal color-[#666]"> 
-            <img src="https://img.icons8.com/color/48/000000/python--v1.png"/>         
-          </div>
           <ProgressBar
             radius={100}
             progress={progress}
@@ -22,17 +18,17 @@ export default function Skills() {
             strokeLinecap="round"
             trackStrokeWidth={20}
           >
-            <div className="flex align-center justify-center absolute top-0 w-full h-full font-thin text-4xl select-none items-center">
-              <div>{progress}%</div>
+            <div className="flex align-center justify-center absolute top-0 w-full h-full select-none items-center">
+              <img
+                src="https://www.python.org/static/community_logos/python-logo-generic.svg"
+                width="100"
+              />
             </div>
           </ProgressBar>
+          <div className="flex justify-center text-3xl">{progress}%</div>
         </div>
 
-
         <div className="basis-64 shrink-0 grow-0 py-2 px-4 rounded-md m-5">
-          <div className="flex justify-between align-center py-2 px-1 mb-3 font-nomal color-[#666]" > 
-            <p>PHP</p>
-          </div>
           <ProgressBar
             radius={100}
             progress={progress}
@@ -41,17 +37,17 @@ export default function Skills() {
             strokeLinecap="round"
             trackStrokeWidth={20}
           >
-            <div className="flex align-center justify-center absolute top-0 w-full h-full font-thin text-4xl select-none items-center">
-              <div>{progress}%</div>
+            <div className="flex align-center justify-center absolute top-0 w-full h-full select-none items-center">
+              <img
+                src="https://www.php.net/images/logos/new-php-logo.svg"
+                width="70"
+              />
             </div>
           </ProgressBar>
+          <div className="flex justify-center text-3xl">{progress}%</div>
         </div>
 
-
         <div className="basis-64 shrink-0 grow-0 py-2 px-4 rounded-md m-5">
-          <div className="flex justify-between align-center py-2 px-1 mb-3 font-nomal color-[#666]" > 
-            <p>Ruby</p>
-          </div>
           <ProgressBar
             radius={100}
             progress={progress}
@@ -60,18 +56,13 @@ export default function Skills() {
             strokeLinecap="round"
             trackStrokeWidth={20}
           >
-
-            <div className="flex align-center justify-center absolute top-0 w-full h-full font-thin text-4xl select-none items-center">
-              <div>{progress}%</div>
+            <div className="flex align-center justify-center absolute top-0 w-full h-full select-none items-center">
+              <p>ruby icon</p>
             </div>
           </ProgressBar>
         </div>
 
-
         <div className="basis-64 shrink-0 grow-0 py-2 px-4 rounded-md m-5">
-          <div className="flex justify-between align-center py-2 px-1 mb-3 font-nomal color-[#666]" > 
-            <p>javascript</p>
-          </div>
           <ProgressBar
             radius={100}
             progress={progress}
@@ -80,18 +71,17 @@ export default function Skills() {
             strokeLinecap="round"
             trackStrokeWidth={20}
           >
-
             <div className="flex align-center justify-center absolute top-0 w-full h-full font-thin text-4xl select-none items-center">
-              <div>{progress}%</div>
+              <img
+                src="https://img.icons8.com/color/48/000000/javascript--v1.png"
+                width="60"
+              />
             </div>
           </ProgressBar>
+          <div className="flex justify-center text-3xl">{progress}%</div>
         </div>
 
-
         <div className="basis-64 shrink-0 grow-0 py-2 px-4 rounded-md m-5">
-          <div className="flex justify-between align-center py-2 px-1 mb-3 font-nomal color-[#666]" > 
-            <p>HTML</p>
-          </div>
           <ProgressBar
             radius={100}
             progress={progress}
@@ -100,33 +90,28 @@ export default function Skills() {
             strokeLinecap="round"
             trackStrokeWidth={20}
           >
-
-            <div className="flex align-center justify-center absolute top-0 w-full h-full font-thin text-4xl select-none items-center">
-              <div>{progress}%</div>
+            <div className="flex align-center justify-center absolute top-0 w-full h-full select-none items-center">
+              <img src="https://www.w3.org/html/logo/downloads/HTML5_Logo.svg" width="70"></img>
             </div>
           </ProgressBar>
+          <div className="flex justify-center text-3xl">{progress}%</div>
         </div>
 
         <div className="basis-64 shrink-0 grow-0 py-2 px-4 rounded-md m-5">
-          <div className="flex justify-between align-center py-2 px-1 mb-3 font-nomal color-[#666]" > 
-            <p>CSS</p>
-          </div>
           <ProgressBar
             radius={100}
             progress={progress}
             strokeWidth={20}
-            strokeColor="#563d7c"
+            strokeColor="#3555FF"
             strokeLinecap="round"
             trackStrokeWidth={20}
           >
-
-            <div className="flex align-center justify-center absolute top-0 w-full h-full font-thin text-4xl select-none items-center">
-              <div>{progress}%</div>
+            <div className="flex align-center justify-center absolute top-0 w-full h-full select-none items-center">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" width="50" />
             </div>
           </ProgressBar>
+          <div className="flex justify-center text-3xl">{progress}%</div>
         </div>
-
-
       </div>
     </Layout>
   );
