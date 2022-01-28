@@ -5,7 +5,7 @@ import Layout from '../components/Layout'
 export default function Contact() {
     return (
         <Layout>
-          <div className='bg-white text-center shadow-2xl p-2 w-6/12 rounded font-mono my-5 ml-auto mr-auto max-w-3xl'>
+          <div className='bg-white text-center shadow-2xl p-2 w-6/12 rounded font-sans my-5 ml-auto mr-auto max-w-3xl'>
             <div class="container">
               <div class=" mx-auto bg-white p-2 rounded-md shadow-sm">
                 <div class="text-center">
