@@ -10,7 +10,7 @@ export default function Layout({ children, title = "Ylog" }) {
       </Head>
       <header>
         <nav className="bg-blue-400 w-screen">
-          <div className="flex items-center justify-center h-16">
+          <div className="flex items-center justify-center h-14 px-5 py-3">
             <Link href="/">
               <motion.button
                 className="text-white py-2 px-5 rounded text-xl hover:bg-blue-500"
