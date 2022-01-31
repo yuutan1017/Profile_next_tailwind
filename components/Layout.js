@@ -19,12 +19,12 @@ export default function Layout({ children, title = "Ylog" }) {
                 Home
               </motion.button>
             </Link>
-            <Link href="/profile-page">
+            <Link href="/works-page">
               <motion.button
                 className="text-white py-2 px-5 rounded text-xl hover:bg-blue-500"
                 whileHover={{ scale: 1.3 }}
               >
-                About
+                Works
               </motion.button>
             </Link>
             <Link href="/skills-page">
