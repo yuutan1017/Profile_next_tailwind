@@ -1,11 +1,5 @@
-import Layout from "../components/Layout";
-import HomePage from "../components/HomePage";
-
+import HomePage from "./home-page";
 
 export default function homePage() {
-  return (
-    <Layout title="Ylog">
-      <HomePage />
-    </Layout>
-  );
+  return <HomePage />;
 }
