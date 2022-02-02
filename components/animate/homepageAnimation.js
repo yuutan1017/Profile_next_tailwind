@@ -50,13 +50,11 @@ export const rightArrow = {
       duration: 0.5,
       delay: 1.4,
     },
-    whileHover: {
-      scale: 1.5,
-    },
   },
   hidden: {
     opacity: 0,
   },
+  
 }
 
 
