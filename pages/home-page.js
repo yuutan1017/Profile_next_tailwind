@@ -2,6 +2,13 @@ import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
+
+import {
+  helloUser,
+  rigthArticle,
+  leftArticle,
+  rightArrow,
+} from "../components/animate/homepageAnimation";
 import Layout from "../components/Layout";
 
 export default function HomePage() {
@@ -10,35 +17,17 @@ export default function HomePage() {
       <Layout>
         <div className="container py-24 mx-auto flex">
           <motion.div
-            animate={{
-              x: 50,
-              opacity: 1,
-            }}
-            initial={{
-              x: -200,
-              opacity: 0,
-            }}
-            transition={{
-              duration: 1,
-            }}
+            initial="hidden"
+            animate="visible"
+            variants={leftArticle}
             className="flex flex-wrap mt-auto mb-auto lg:w-1/2 sm:w-2/3 content-start m-4 px-10"
           >
             <div className="w-full sm:p-4 px-4 mb-6">
               <motion.h1
                 className="title-font font-medium text-4xl mb-10 text-gray-900"
-                initial={{
-                  opacity: 0,
-                  y: "100%",
-                }}
-                animate={{
-                  opacity: 1,
-                  y: 0,
-                  transition: {
-                    duration: 0.45,
-                    delay: 1.2,
-                    ease: "easeInOut",
-                  },
-                }}
+                animate="visible"
+                initial="hidden"
+                variants={helloUser}
               >
                 Thank you for visiting!!
               </motion.h1>
@@ -85,18 +74,9 @@ export default function HomePage() {
 
           <motion.div
             className="container lg:w-1/2 sm:w-1/3 w-full m-4 px-10"
-            animate={{
-              x: -50,
-              opacity: 1,
-            }}
-            initial={{
-              x: 200,
-              opacity: 0,
-            }}
-            transition={{
-              duration: 1,
-              delay: 0.3,
-            }}
+            animate="visible"
+            initial="hidden"
+            variants={rigthArticle}
           >
             <div className="flex bg-white px-7 py-10 shadow-xl shadow-slate-400">
               <div className="flex flex-col justify-center text-gray-700">
@@ -123,16 +103,9 @@ export default function HomePage() {
           <div className="mx-5 cursor-pointer">
             <Link href="/works-page">
               <motion.svg
-                animate={{
-                  opacity: 1,
-                }}
-                initial={{
-                  opacity: 0,
-                }}
-                transition={{
-                  duration: 0.5,
-                  delay: 1.4,
-                }}
+                animate="visible"
+                initial="hidden"
+                variants={rightArrow}
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-12 w-12"
                 fill="none"

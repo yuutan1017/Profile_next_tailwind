@@ -49,10 +49,10 @@ export default function Layout({ children, title = "Ylog" }) {
           </div>
         </nav>
       </header>
-      <main className="flex flex-1 justify-center items-center flex-col w-screen bg-gradient-to-r from-white via-white to-teal-100">
+      <main className="flex flex-1 justify-center items-center flex-col w-screen bg-gradient-to-r from-white via-teal-50 to-teal-100">
         {children}
       </main>
-      <footer className="w-full h-10 flex justify-center items-center border-t-4 bg-gradient-to-r from-white via-teal-50 to-teal-100">
+      <footer className="w-full h-10 flex justify-center items-center bg-gradient-to-r from-white via-teal-50 to-teal-100">
         <a className="flex items-center">copyright@2022 yuutan</a>
       </footer>
     </div>
