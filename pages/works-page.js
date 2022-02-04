@@ -2,9 +2,15 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 
+import ProgressBar from "react-customizable-progressbar";
 import Layout from "../components/Layout";
+import {
+  rightArrow,
+  leftArrow,
+} from "../components/animate/workspageAnimation";
+import Skills from "./skills-page";
 
-export default function Tabs() {
+export default function Works() {
   const [openTab, setOpenTab] = useState(1);
   return (
     <>
@@ -20,7 +26,7 @@ export default function Tabs() {
                   className={
                     "text-xs font-bold uppercase px-5 py-3 shadow-lg rounded block leading-normal " +
                     (openTab === 1
-                      ? "text-white bg-blue-600"
+                      ? "text-white bg-teal-400"
                       : "text-gray-600 bg-white")
                   }
                   onClick={(e) => {
@@ -31,7 +37,7 @@ export default function Tabs() {
                   href="#link1"
                   role="tablist"
                 >
-                  Profile
+                  言語・フレームワーク
                 </a>
               </li>
               <li className="-mb-px mr-2 last:mr-0 flex-auto text-center">
@@ -39,7 +45,7 @@ export default function Tabs() {
                   className={
                     "text-xs font-bold uppercase px-5 py-3 shadow-lg rounded block leading-normal " +
                     (openTab === 2
-                      ? "text-white bg-blue-600"
+                      ? "text-white bg-teal-400"
                       : "text-gray-600 bg-white")
                   }
                   onClick={(e) => {
@@ -50,7 +56,7 @@ export default function Tabs() {
                   href="#link2"
                   role="tablist"
                 >
-                  Settings
+                  開発
                 </a>
               </li>
               <li className="-mb-px mr-2 last:mr-0 flex-auto text-center">
@@ -58,7 +64,7 @@ export default function Tabs() {
                   className={
                     "text-xs font-bold uppercase px-5 py-3 shadow-lg rounded block leading-normal " +
                     (openTab === 3
-                      ? "text-white bg-blue-600"
+                      ? "text-white bg-teal-400"
                       : "text-gray-600 bg-white")
                   }
                   onClick={(e) => {
@@ -69,7 +75,7 @@ export default function Tabs() {
                   href="#link3"
                   role="tablist"
                 >
-                  Options
+                  その他
                 </a>
               </li>
             </ul>
@@ -80,15 +86,9 @@ export default function Tabs() {
                     className={openTab === 1 ? "block" : "hidden"}
                     id="link1"
                   >
-                    <p>
-                      Collaboratively administrate empowered markets via
-                      plug-and-play networks. Dynamically procrastinate B2C
-                      users after installed base benefits.
-                      <br />
-                      <br /> Dramatically visualize customer directed
-                      convergence without revolutionary ROI.
-                    </p>
+<Skills />
                   </div>
+
                   <div
                     className={openTab === 2 ? "block" : "hidden"}
                     id="link2"
@@ -124,6 +124,9 @@ export default function Tabs() {
         <div className="container flex m-8 justify-center">
           <Link href="/home-page">
             <motion.svg
+              animate="visible"
+              initial="hidden"
+              variants={leftArrow}
               xmlns="http://www.w3.org/2000/svg"
               className="h-12 w-12 cursor-pointer mx-5"
               fill="none"
@@ -140,16 +143,9 @@ export default function Tabs() {
           </Link>
           <Link href="/skills-page">
             <motion.svg
-              animate={{
-                opacity: 1,
-              }}
-              initial={{
-                opacity: 0,
-              }}
-              transition={{
-                duration: 0.5,
-                delay: 1.4,
-              }}
+              animate="visible"
+              initial="hidden"
+              variants={rightArrow}
               xmlns="http://www.w3.org/2000/svg"
               className="h-12 w-12 cursor-pointer mx-5"
               fill="none"

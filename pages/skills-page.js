@@ -1,17 +1,14 @@
 import React from "react";
 import ProgressBar from "react-customizable-progressbar";
 
-import Layout from "../components/Layout";
-
 export default function Skills() {
   const progress = 77;
 
   return (
-    <Layout>
       <div className="flex flex-wrap justify-center">
-        <div className="basis-64 shrink-0 grow-0 py-2 px-4 rounded-md m-5">
+        <div className="flex-col items-center px-3 py-3">
           <ProgressBar
-            radius={100}
+            radius={70}
             progress={progress}
             strokeWidth={20}
             strokeColor="#3572A5"
@@ -28,9 +25,9 @@ export default function Skills() {
           <div className="flex justify-center text-3xl">{progress}%</div>
         </div>
 
-        <div className="basis-64 shrink-0 grow-0 py-2 px-4 rounded-md m-5">
+        <div className="flex-col items-center px-3 py-3">
           <ProgressBar
-            radius={100}
+            radius={70}
             progress={progress}
             strokeWidth={20}
             strokeColor="#4F5D95"
@@ -47,9 +44,9 @@ export default function Skills() {
           <div className="flex justify-center text-3xl">{progress}%</div>
         </div>
 
-        <div className="basis-64 shrink-0 grow-0 py-2 px-4 rounded-md m-5">
+        <div className="flex-col items-center px-3 py-3">
           <ProgressBar
-            radius={100}
+            radius={70}
             progress={progress}
             strokeWidth={20}
             strokeColor="#701516"
@@ -62,9 +59,9 @@ export default function Skills() {
           </ProgressBar>
         </div>
 
-        <div className="basis-64 shrink-0 grow-0 py-2 px-4 rounded-md m-5">
+        <div className="flex-col items-center px-3 py-3">
           <ProgressBar
-            radius={100}
+            radius={70}
             progress={progress}
             strokeWidth={20}
             strokeColor="#f1e05a"
@@ -81,9 +78,9 @@ export default function Skills() {
           <div className="flex justify-center text-3xl">{progress}%</div>
         </div>
 
-        <div className="basis-64 shrink-0 grow-0 py-2 px-4 rounded-md m-5">
+        <div className="flex-col items-center px-3 py-3">
           <ProgressBar
-            radius={100}
+            radius={70}
             progress={progress}
             strokeWidth={20}
             strokeColor="#e44b23"
@@ -97,9 +94,9 @@ export default function Skills() {
           <div className="flex justify-center text-3xl">{progress}%</div>
         </div>
 
-        <div className="basis-64 shrink-0 grow-0 py-2 px-4 rounded-md m-5">
+        <div className="flex-col items-center px-3 py-3">
           <ProgressBar
-            radius={100}
+            radius={70}
             progress={progress}
             strokeWidth={20}
             strokeColor="#3555FF"
@@ -113,6 +110,5 @@ export default function Skills() {
           <div className="flex justify-center text-3xl">{progress}%</div>
         </div>
       </div>
-    </Layout>
   );
 }
