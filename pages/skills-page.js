@@ -14,7 +14,7 @@ export default function Skills() {
   const [openTab, setOpenTab] = useState(1);
   return (
     <Layout>
-      <div className="flex flex-wrap">
+      <div className="flex flex-wrap mt-8">
         <div className="w-full">
           <ul
             className="flex mb-0 list-none flex-wrap pt-3 pb-4"

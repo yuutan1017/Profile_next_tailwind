@@ -4,7 +4,7 @@ import { CircularProgressBar } from "@tomik23/react-circular-progress-bar";
 export default function Lan_skills() {
   return (
     <div className="flex flex-wrap justify-center max-w-5xl m-4">
-      <div className="flex-col items-center px-4 py-3">
+      <div className="flex-col items-center px-7 py-3">
         {/* python */}
         <CircularProgressBar
           percent={74}
@@ -31,7 +31,7 @@ export default function Lan_skills() {
       </div>
 
       {/* django */}
-      <div className="flex-col items-center px-4 py-3">
+      <div className="flex-col items-center px-7 py-3">
         <CircularProgressBar
           percent={65}
           size={170}
@@ -57,7 +57,7 @@ export default function Lan_skills() {
       </div>
         
       {/* php */}
-      <div className="flex-col items-center px-4 py-3">
+      <div className="flex-col items-center px-7 py-3">
         <CircularProgressBar
           percent={54}
           size={170}
@@ -83,7 +83,7 @@ export default function Lan_skills() {
       </div>
 
       {/* laravel */}
-      <div className="flex-col items-center px-4 py-3">
+      <div className="flex-col items-center px-7 py-3">
         <CircularProgressBar
           percent={54}
           size={170}
@@ -109,7 +109,7 @@ export default function Lan_skills() {
       </div>
 
       {/* javascript */}
-      <div className="flex-col items-center px-4 py-3">
+      <div className="flex-col items-center px-7 py-3">
         <CircularProgressBar
           percent={70}
           size={170}
@@ -135,7 +135,7 @@ export default function Lan_skills() {
       </div>
 
       {/* React */}
-      <div className="flex-col items-center px-4 py-3">
+      <div className="flex-col items-center px-7 py-3">
         <CircularProgressBar
           percent={68}
           size={170}
@@ -161,7 +161,7 @@ export default function Lan_skills() {
       </div>
 
       {/* HTML5 */}
-      <div className="flex-col items-center px-4 py-3">
+      <div className="flex-col items-center px-7 py-3">
         <CircularProgressBar
           percent={60}
           size={170}
@@ -187,7 +187,7 @@ export default function Lan_skills() {
       </div>
 
       {/* css */}
-      <div className="flex-col items-center px-4 py-3">
+      <div className="flex-col items-center px-7 py-3">
         <CircularProgressBar
           percent={58}
           size={170}
