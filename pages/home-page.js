@@ -78,7 +78,7 @@ export default function HomePage() {
             initial="hidden"
             variants={rigthArticle}
           >
-            <div className="flex bg-white px-7 py-10 shadow-xl shadow-slate-400">
+            <div className="flex bg-gray-100 px-7 py-10 shadow-xl shadow-slate-400">
               <div className="flex flex-col justify-center text-gray-700">
                 <h5 className="text-2xl ml-3 mb-6">My Profile</h5>
                 <div className="mx-4 mb-5 font-bold">
@@ -101,7 +101,7 @@ export default function HomePage() {
         </div>
         <div className="flex justify-center items-center">
           <div className="mx-5 cursor-pointer">
-            <Link href="/works-page">
+            <Link href="/skills-page">
               <motion.svg
                 animate="visible"
                 initial="hidden"

@@ -24,20 +24,20 @@ export default function Layout({ children, title = "Ylog" }) {
                   Home
                 </motion.button>
               </Link>
-              <Link href="/works-page">
-                <motion.button
-                  className="py-2 px-5 rounded text-xl"
-                  whileHover={{ scale: 1.3 }}
-                >
-                  Works
-                </motion.button>
-              </Link>
               <Link href="/skills-page">
                 <motion.button
                   className="py-2 px-5 rounded text-xl"
                   whileHover={{ scale: 1.3 }}
                 >
                   Skills
+                </motion.button>
+              </Link>
+              <Link href="/portfolio-page">
+                <motion.button
+                  className="py-2 px-5 rounded text-xl"
+                  whileHover={{ scale: 1.3 }}
+                >
+                  Portfolio
                 </motion.button>
               </Link>
               <Link href="/contact-page">

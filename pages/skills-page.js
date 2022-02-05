@@ -1,114 +1,119 @@
-import React from "react";
-import ProgressBar from "react-customizable-progressbar";
+import React, { useState } from "react";
+import { motion } from "framer-motion";
+import Link from "next/link";
+
+import Layout from "../components/Layout";
+import {
+  rightArrow,
+  leftArrow,
+} from "../components/animate/workspageAnimation";
+import Lan_skills from "../components/LanguageSkills";
+import Others_skills from "../components/OthersSkills";
 
 export default function Skills() {
-  const progress = 77;
-
+  const [openTab, setOpenTab] = useState(1);
   return (
-      <div className="flex flex-wrap justify-center">
-        <div className="flex-col items-center px-3 py-3">
-          <ProgressBar
-            radius={70}
-            progress={progress}
-            strokeWidth={20}
-            strokeColor="#3572A5"
-            strokeLinecap="round"
-            trackStrokeWidth={20}
+    <Layout>
+      <div className="flex flex-wrap">
+        <div className="w-full">
+          <ul
+            className="flex mb-0 list-none flex-wrap pt-3 pb-4"
+            role="tablist"
           >
-            <div className="flex align-center justify-center absolute top-0 w-full h-full select-none items-center">
-              <img
-                src="https://www.python.org/static/community_logos/python-logo-generic.svg"
-                width="100"
-              />
-            </div>
-          </ProgressBar>
-          <div className="flex justify-center text-3xl">{progress}%</div>
-        </div>
+            <li className="mr-auto last:mr-0 text-center flex-auto">
+              <a
+                className={
+                  "text-xs font-bold px-5 py-3 shadow-lg rounded block leading-normal " +
+                  (openTab === 1
+                    ? "text-white bg-teal-400"
+                    : "text-gray-600 bg-gray-100")
+                }
+                onClick={(e) => {
+                  e.preventDefault();
+                  setOpenTab(1);
+                }}
+                data-toggle="tab"
+                href="#link1"
+                role="tablist"
+              >
+                言語・フレームワーク・ライブラリ
+              </a>
+            </li>
+            <li className="ml-auto last:mr-0 flex-auto text-center">
+              <a
+                className={
+                  "text-xs font-bold px-5 py-3 shadow-lg rounded block leading-normal " +
+                  (openTab === 2
+                    ? "text-white bg-teal-400"
+                    : "text-gray-600 bg-gray-100")
+                }
+                onClick={(e) => {
+                  e.preventDefault();
+                  setOpenTab(2);
+                }}
+                data-toggle="tab"
+                href="#link2"
+                role="tablist"
+              >
+                その他
+              </a>
+            </li>
+          </ul>
+          <div className="relative flex flex-col min-w-0 bg-gray-100 w-full mb-6 shadow-2xl rounded">
+            <div className="px-6 py-6 flex-auto">
+              <div className={openTab === 1 ? "block" : "hidden"} id="link1">
+                <Lan_skills />
+              </div>
 
-        <div className="flex-col items-center px-3 py-3">
-          <ProgressBar
-            radius={70}
-            progress={progress}
-            strokeWidth={20}
-            strokeColor="#4F5D95"
-            strokeLinecap="round"
-            trackStrokeWidth={20}
-          >
-            <div className="flex align-center justify-center absolute top-0 w-full h-full select-none items-center">
-              <img
-                src="https://www.php.net/images/logos/new-php-logo.svg"
-                width="70"
-              />
+              <div className={openTab === 2 ? "block" : "hidden"} id="link2">
+                <Others_skills />
+              </div>
             </div>
-          </ProgressBar>
-          <div className="flex justify-center text-3xl">{progress}%</div>
-        </div>
-
-        <div className="flex-col items-center px-3 py-3">
-          <ProgressBar
-            radius={70}
-            progress={progress}
-            strokeWidth={20}
-            strokeColor="#701516"
-            strokeLinecap="round"
-            trackStrokeWidth={20}
-          >
-            <div className="flex align-center justify-center absolute top-0 w-full h-full select-none items-center">
-              <p>ruby icon</p>
-            </div>
-          </ProgressBar>
-        </div>
-
-        <div className="flex-col items-center px-3 py-3">
-          <ProgressBar
-            radius={70}
-            progress={progress}
-            strokeWidth={20}
-            strokeColor="#f1e05a"
-            strokeLinecap="round"
-            trackStrokeWidth={20}
-          >
-            <div className="flex align-center justify-center absolute top-0 w-full h-full font-thin text-4xl select-none items-center">
-              <img
-                src="https://img.icons8.com/color/48/000000/javascript--v1.png"
-                width="60"
-              />
-            </div>
-          </ProgressBar>
-          <div className="flex justify-center text-3xl">{progress}%</div>
-        </div>
-
-        <div className="flex-col items-center px-3 py-3">
-          <ProgressBar
-            radius={70}
-            progress={progress}
-            strokeWidth={20}
-            strokeColor="#e44b23"
-            strokeLinecap="round"
-            trackStrokeWidth={20}
-          >
-            <div className="flex align-center justify-center absolute top-0 w-full h-full select-none items-center">
-              <img src="https://www.w3.org/html/logo/downloads/HTML5_Logo.svg" width="70"></img>
-            </div>
-          </ProgressBar>
-          <div className="flex justify-center text-3xl">{progress}%</div>
-        </div>
-
-        <div className="flex-col items-center px-3 py-3">
-          <ProgressBar
-            radius={70}
-            progress={progress}
-            strokeWidth={20}
-            strokeColor="#3555FF"
-            strokeLinecap="round"
-            trackStrokeWidth={20}
-          >
-            <div className="flex align-center justify-center absolute top-0 w-full h-full select-none items-center">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" width="50" />
-            </div>
-          </ProgressBar>
-          <div className="flex justify-center text-3xl">{progress}%</div>
+          </div>
         </div>
       </div>
+
+      <div className="container flex m-8 justify-center">
+        <Link href="/home-page">
+          <motion.svg
+            animate="visible"
+            initial="hidden"
+            variants={leftArrow}
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-12 w-12 cursor-pointer mx-10"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={3}
+              d="M11 19l-7-7 7-7m8 14l-7-7 7-7"
+            />
+          </motion.svg>
+        </Link>
+        
+        <Link href="/portfolio-page">
+          <motion.svg
+            animate="visible"
+            initial="hidden"
+            variants={rightArrow}
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-12 w-12 cursor-pointer mx-10"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={3}
+              d="M13 5l7 7-7 7M5 5l7 7-7 7"
+            />
+          </motion.svg>
+        </Link>
+      </div>
+    </Layout>
   );
 }
