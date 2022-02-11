@@ -10,11 +10,11 @@ export const helloUser = {
   },
   hidden: {
     opacity: 0,
-    y: "100%"
-  }
-}
+    y: "100%",
+  },
+};
 
-export const rigthArticle = {
+export const rightArticle = {
   visible: {
     opacity: 1,
     x: -50,
@@ -43,7 +43,7 @@ export const leftArticle = {
   },
 };
 
-export const rightArrow = {
+export const rightArrowAnimation = {
   visible: {
     opacity: 1,
     transition: {
@@ -54,7 +54,17 @@ export const rightArrow = {
   hidden: {
     opacity: 0,
   },
-  
-}
+};
 
-
+export const leftArrowAnimation = {
+  visible: {
+    opacity: 1,
+    transition: {
+      duration: 0.5,
+      delay: 1.1,
+    },
+  },
+  hidden: {
+    opacity: 0,
+  },
+};

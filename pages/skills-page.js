@@ -3,10 +3,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 
 import Layout from "../components/Layout";
-import {
-  rightArrow,
-  leftArrow,
-} from "../components/animate/workspageAnimation";
+import { rightArrowAnimation,leftArrowAnimation } from "../components/animate/Animation";
 import Lan_skills from "../components/LanguageSkills";
 import Others_skills from "../components/OthersSkills";
 
@@ -78,7 +75,7 @@ export default function Skills() {
           <motion.svg
             animate="visible"
             initial="hidden"
-            variants={leftArrow}
+            variants={leftArrowAnimation}
             xmlns="http://www.w3.org/2000/svg"
             className="h-12 w-12 cursor-pointer mx-10"
             fill="none"
@@ -98,7 +95,7 @@ export default function Skills() {
           <motion.svg
             animate="visible"
             initial="hidden"
-            variants={rightArrow}
+            variants={rightArrowAnimation}
             xmlns="http://www.w3.org/2000/svg"
             className="h-12 w-12 cursor-pointer mx-10"
             fill="none"

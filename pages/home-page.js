@@ -5,10 +5,10 @@ import Image from "next/image";
 
 import {
   helloUser,
-  rigthArticle,
+  rightArticle,
   leftArticle,
-  rightArrow,
-} from "../components/animate/homepageAnimation";
+  rightArrowAnimation,
+} from "../components/animate/Animation";
 import Layout from "../components/Layout";
 
 export default function HomePage() {
@@ -76,7 +76,7 @@ export default function HomePage() {
             className="container lg:w-1/2 sm:w-1/3 w-full m-4 px-10"
             animate="visible"
             initial="hidden"
-            variants={rigthArticle}
+            variants={rightArticle}
           >
             <div className="flex bg-gray-100 px-7 py-10 shadow-xl shadow-slate-400">
               <div className="flex flex-col justify-center text-gray-700">
@@ -105,7 +105,7 @@ export default function HomePage() {
               <motion.svg
                 animate="visible"
                 initial="hidden"
-                variants={rightArrow}
+                variants={rightArrowAnimation}
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-12 w-12"
                 fill="none"
