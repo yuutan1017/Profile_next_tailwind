@@ -8,15 +8,14 @@ import Layout from "../components/Layout";
 import { leftArrowAnimation } from "../components/animate/Animation";
 
 export default function Contact() {
-  
   const { register, handleSubmit, errors, reset } = useForm();
 
   async function onSubmitForm(values) {
     let config = {
-      method: 'post',
+      method: "post",
       url: `${process.env.NEXT_PUBLIC_API_URL}/api/contact`,
       headers: {
-        'Content-Type': 'application/json',
+        "Content-Type": "application/json",
       },
       data: values,
     };
@@ -46,7 +45,9 @@ export default function Contact() {
                 name="name"
                 type="text"
                 placeholder="例）氏名"
-                className={`w-full px-2 py-3 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 ${errors.name ? 'focus:ring-red-300' : null }`}
+                className={`w-full px-2 py-3 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 ${
+                  errors.name ? "focus:ring-red-300" : null
+                }`}
                 ref={register({
                   required: {
                     value: true,
@@ -70,7 +71,9 @@ export default function Contact() {
                 name="email"
                 type="email"
                 placeholder="例）your@example.com"
-                className={`w-full px-2 py-3 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 ${errors.name ? 'focus:ring-red-300' : null }`}
+                className={`w-full px-2 py-3 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 ${
+                  errors.name ? "focus:ring-red-300" : null
+                }`}
                 ref={register({
                   required: {
                     value: true,
@@ -78,7 +81,7 @@ export default function Contact() {
                   },
                   pattern: {
                     value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
-                    message: '※有効なメールアドレスである必要があります',
+                    message: "※有効なメールアドレスである必要があります",
                   },
                 })}
               />
@@ -98,7 +101,9 @@ export default function Contact() {
                 name="message"
                 rows="9"
                 placeholder="お問い合わせ内容です"
-                className={`w-full px-2 py-3 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 ${errors.name ? 'focus:ring-red-300' : null }`}
+                className={`w-full px-2 py-3 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 ${
+                  errors.name ? "focus:ring-red-300" : null
+                }`}
                 ref={register({
                   required: {
                     value: true,
