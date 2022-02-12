@@ -16,24 +16,21 @@ export default async (req, res) => {
   });
 
   const toHostMailData = {
-    from: `${req.body.email}`,
+    from: req.body.email,
     to: process.env.USER,
-    subject: `【お問い合わせ】${req.body.name}様より`,
+    subject: `【お問い合わせ】${req.body.name} 様より`,
     text: req.body.message + " | Sent from: " + req.body.email,
     html: `
       <p>【名前】</p>
       <p>${req.body.name}</p>
-      <p>【メッセージ】</p>
-      <p> dammy text </p>
       <p>【メールアドレス】</p>
       <p>${req.body.email}</p>
+      <p>【メッセージ】</p>
+      <p>${req.body.message}</p>
     `,
   };
 
-  transporter.sendMail(toHostMailData, function (err, info) {
-    if (err) console.log(err);
-    else console.log(info);
+  transporter.sendMail(toHostMailData, (error, response) => {
+    // console.log(error || response);
   });
-
-  res.status(200).json(req.body);
 };

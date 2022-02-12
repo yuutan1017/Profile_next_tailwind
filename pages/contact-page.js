@@ -23,11 +23,8 @@ export default function Contact() {
 
     try {
       const response = await axios(config);
-      console.log(response);
-      if (response.status == 200) {
-        console.log("Success")
-        reset();
-      }
+      // console.log(response);
+      reset();
     } catch (err) {}
   }
 
@@ -91,16 +88,7 @@ export default function Contact() {
                 </span>
               </div>
             </div>
-            <div className="m-4">
-              <label className="text-gray-600 text-base">電話番号</label>
-              <input
-                name="phone"
-                type="text"
-                placeholder="例）000-0000-000"
-                className={`w-full px-2 py-3 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 ${errors.name ? 'focus:ring-red-300' : null }`}
-                ref={register("phone")}
-              />
-            </div>
+
             <div className="m-4">
               <label className="block mb-2 text-sm text-gray-600">
                 お問合せ内容
@@ -108,7 +96,7 @@ export default function Contact() {
               </label>
               <textarea
                 name="message"
-                rows="6"
+                rows="9"
                 placeholder="お問い合わせ内容です"
                 className={`w-full px-2 py-3 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 ${errors.name ? 'focus:ring-red-300' : null }`}
                 ref={register({
