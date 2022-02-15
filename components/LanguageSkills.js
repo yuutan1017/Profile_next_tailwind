@@ -102,7 +102,7 @@ export default function Lan_skills() {
         />
         <div className="flex justify-center mt-3">
           <img
-            src="/laravel_icon.png"
+            src="/icons/laravel_icon.png"
             width="120"
           />
         </div>
@@ -154,7 +154,7 @@ export default function Lan_skills() {
         />
         <div className="flex justify-center mt-2">
           <img
-            src="/reactjs_icon.png"
+            src="/icons/reactjs_icon.png"
             width="140"
           />
         </div>

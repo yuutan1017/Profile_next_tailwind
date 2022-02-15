@@ -46,7 +46,7 @@ export default function Others_skills() {
         />
         <div className="flex justify-center mt-2">
           <img
-            src="/git_icon.png"
+            src="/icons/git_icon.png"
             width="70"
           />
         </div>
@@ -71,7 +71,7 @@ export default function Others_skills() {
         />
         <div className="flex justify-center mt-2">
           <img
-            src="/docker_icon.png"
+            src="/icons/docker_icon.png"
             width="60"
           />
         </div>

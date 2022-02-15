@@ -29,14 +29,14 @@ export default function Contact() {
 
   return (
     <Layout>
-      <div className="text-center bg-white shadow-2xl w-6/12 rounded font-sans max-w-3xl p-5 mt-5">
-        <div className="container">
+      <div className="md:w-7/12 md:p-5 text-center bg-white shadow-2xl w-11/12 rounded font-sans max-w-3xl mt-7">
+        <div className="container m-3">
           <h1 className="text-3xl text-gray-700">Contact Form</h1>
         </div>
 
-        <div className="m-5">
+        <div className="md:m-4">
           <form onSubmit={handleSubmit(onSubmitForm)}>
-            <div className="m-4">
+            <div className="mx-4 mt-8">
               <label className="text-gray-600 text-base">
                 氏名
                 <span className="text-xs text-red-500">(必須)</span>
@@ -62,7 +62,7 @@ export default function Contact() {
               </div>
             </div>
 
-            <div className="m-4">
+            <div className="mt-8 mx-4">
               <label className="text-gray-600 text-base">
                 メールアドレス
                 <span className="text-xs text-red-500">(必須)</span>
@@ -92,7 +92,7 @@ export default function Contact() {
               </div>
             </div>
 
-            <div className="m-4">
+            <div className="mt-8 mx-4">
               <label className="block mb-2 text-sm text-gray-600">
                 お問合せ内容
                 <span className="text-xs text-red-500">(必須)</span>
@@ -122,7 +122,7 @@ export default function Contact() {
               </div>
               <button
                 type="submit"
-                className="w-full mt-10 py-4 font-bold text-white bg-teal-400 rounded-md focus:bg-teal-100 focus:outline-none"
+                className="w-full md:mt-8 md:my-0 my-3 py-4 font-bold text-white bg-teal-400 rounded-md focus:bg-teal-100 focus:outline-none"
               >
                 送信する
               </button>

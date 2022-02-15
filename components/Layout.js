@@ -3,17 +3,17 @@ import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
-export default function Layout({ children, title = "Ylog" }) {
+export default function Layout({ children }) {
   return (
     <div className="flex justify-center items-center flex-col min-h-screen text-gray-600 text-sm font-sans">
       <Head>
-        <link rel="icon" href="/YLog.ico" />
-        <title>{title}</title>
+        <link rel="icon" href="/image/YLog-icon.ico" />
+        <title>YLog</title>
       </Head>
       <header>
         <nav className="bg-gradient-to-r from-white via-yellow-50 to-teal-200 w-screen">
           <div className="flex items-center h-12 px-10 pl-20 py-3 text-slate-900">
-            <Image className="" src="/YLogIcon.png" width={60} height={60} />
+            <Image src="/image/YLog.png" width={60} height={60} />
             <a className="text-xl font-bold">YLog</a>
             <div className="ml-auto space-x-3">
               <Link href="/">
