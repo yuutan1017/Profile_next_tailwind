@@ -15,14 +15,14 @@ export default function HomePage() {
   return (
     <>
       <Layout>
-        <div className="container md:py-24 md:mx-auto md:flex py-12">
+        <div className="container xl:py-24 xl:mx-auto xl:flex py-12">
           <motion.div
             initial="hidden"
             animate="visible"
             variants={leftArticle}
-            className="container flex flex-wrap mt-auto mb-auto content-start m-4 md:px-10"
+            className="flex flex-wrap mt-auto mb-auto content-start m-4 xl:px-10"
           >
-            <div className="w-full md:p-4 md:px-4 mb-6">
+            <div className="w-full p-4 px-4 mb-6 mr-14 md:mr-0">
               <motion.h1
                 className="title-font font-medium text-4xl mb-10 text-gray-900"
                 animate="visible"
@@ -40,11 +40,11 @@ export default function HomePage() {
               </div>
             </div>
 
-            <div className="flex justify-center md:justify-around md:m-auto">
+            <div className="flex items-center md:justify-around xl:m-auto">
               <Link href="https://github.com/yuutan1017">
                 <motion.img
                   src="/icons/github_icon.png"
-                  className="w-14 h-14 items-cetnter cursor-pointer mx-10"
+                  className="w-14 h-14 items-cetnter cursor-pointer md:mx-10"
                   whileHover={{ scale: 1.5 }}
                 />
               </Link>
@@ -58,7 +58,7 @@ export default function HomePage() {
               <Link href="/skills-page">
                 <motion.img
                   src="/image/personal.png"
-                  className="w-12 h-12 items-center cursor-pointer mx-10"
+                  className="w-12 h-12 items-center cursor-pointer md:mx-10"
                   whileHover={{ scale: 1.5 }}
                 />
               </Link>
@@ -66,14 +66,14 @@ export default function HomePage() {
           </motion.div>
 
           <motion.div
-            className="container w-full m-4 px-10"
+            className="container w-full ml-14 px-10 text-center md:text-left mt-5 xl:mt-0"
             animate="visible"
             initial="hidden"
             variants={rightArticle}
           >
             <div className="md:flex md:justify-around bg-gray-100 px-7 py-7 shadow-xl shadow-slate-400">
-              <div className="flex flex-col justify-center text-gray-700">
-                <h5 className="text-2xl ml-3 mb-6">My Profile</h5>
+              <div className="lg:flex lg:flex-col justify-center text-gray-700">
+                <h5 className="text-2xl ml-3 md:mb-6 mb-3">My Profile</h5>
                 <div className="mx-4 mb-5 font-bold">
                   <p className="mt-2">Name</p>
                   <p className="text-xl my-2">Yuta Nakamura</p>
