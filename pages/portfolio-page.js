@@ -1,49 +1,57 @@
 import React from "react";
-import { useState } from "react";
-import { motion, AnimateSharedLayout, AnimatePresence } from "framer-motion";
+import Link from "next/link";
+import { motion } from "framer-motion";
+import {
+  leftArrowAnimation,
+  rightArrowAnimation,
+} from "../components/animate/Animation";
 
 import Layout from "../components/Layout";
 
 export default function Portfolio() {
   return (
     <Layout>
-      <AnimateSharedLayout>
-        <motion.ul layout initial={{ borderRadius: 25 }}>
-          {items.map((item) => (
-            <Item key={item} />
-          ))}
-        </motion.ul>
-      </AnimateSharedLayout>
+      <div className="container flex m-8 justify-center">
+        <Link href="/skills-page">
+          <motion.svg
+            animate="visible"
+            initial="hidden"
+            variants={leftArrowAnimation}
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-12 w-12 cursor-pointer mx-10"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={3}
+              d="M11 19l-7-7 7-7m8 14l-7-7 7-7"
+            />
+          </motion.svg>
+        </Link>
+
+        <Link href="/contact-page">
+          <motion.svg
+            animate="visible"
+            initial="hidden"
+            variants={rightArrowAnimation}
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-12 w-12 cursor-pointer mx-10"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={3}
+              d="M13 5l7 7-7 7M5 5l7 7-7 7"
+            />
+          </motion.svg>
+        </Link>
+      </div>
     </Layout>
   );
 }
-
-function Item() {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggleOpen = () => setIsOpen(!isOpen);
-
-  return (
-    <motion.li layout onClick={toggleOpen} initial={{ borderRadius: 10 }}>
-      <motion.div className="avatar" layout />
-      <AnimatePresence>{isOpen && <Content />}</AnimatePresence>
-    </motion.li>
-  );
-}
-
-function Content() {
-  return (
-    <motion.div
-      layout
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
-    >
-      <div className="row" />
-      <div className="row" />
-      <div className="row" />
-    </motion.div>
-  );
-}
-
-const items = [0, 1, 2];

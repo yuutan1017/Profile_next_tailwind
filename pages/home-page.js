@@ -47,6 +47,7 @@ export default function HomePage() {
                   className="w-14 h-14 items-cetnter cursor-pointer md:mx-10"
                   whileHover={{ scale: 1.5 }}
                 />
+
               </Link>
               <Link href="/contact-page">
                 <motion.img

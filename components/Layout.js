@@ -15,10 +15,10 @@ export default function Layout({ children }) {
           <div className="flex items-center h-12 px-10 pl-20 py-3 text-slate-900">
             <Image src="/image/YLog.png" width={60} height={60} />
             <a className="text-xl font-bold">YLog</a>
-            <div className="ml-auto space-x-3">
+            <div className="ml-auto md:space-x-3 sm:inline-block hidden">
               <Link href="/">
                 <motion.button
-                  className="py-2 px-5 rounded text-xl"
+                  className="py-2 md:px-5 rounded text-xl"
                   whileHover={{ scale: 1.3 }}
                 >
                   Home
@@ -34,7 +34,7 @@ export default function Layout({ children }) {
               </Link>
               <Link href="/portfolio-page">
                 <motion.button
-                  className="py-2 px-5 rounded text-xl"
+                  className="py-2 md:px-5 rounded text-xl"
                   whileHover={{ scale: 1.3 }}
                 >
                   Portfolio
