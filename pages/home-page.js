@@ -11,19 +11,18 @@ import {
 } from "../components/animate/Animation";
 import Layout from "../components/Layout";
 
-
 export default function HomePage() {
   return (
     <>
       <Layout>
-        <div className="container py-24 mx-auto flex">
+        <div className="container md:py-24 md:mx-auto md:flex py-12">
           <motion.div
             initial="hidden"
             animate="visible"
             variants={leftArticle}
-            className="flex flex-wrap mt-auto mb-auto content-start m-4 px-10"
+            className="container flex flex-wrap mt-auto mb-auto content-start m-4 md:px-10"
           >
-            <div className="w-full sm:p-4 px-4 mb-6">
+            <div className="w-full md:p-4 md:px-4 mb-6">
               <motion.h1
                 className="title-font font-medium text-4xl mb-10 text-gray-900"
                 animate="visible"
@@ -41,7 +40,7 @@ export default function HomePage() {
               </div>
             </div>
 
-            <div className="flex justify-around m-auto">
+            <div className="flex justify-center md:justify-around md:m-auto">
               <Link href="https://github.com/yuutan1017">
                 <motion.img
                   src="/icons/github_icon.png"
@@ -72,7 +71,7 @@ export default function HomePage() {
             initial="hidden"
             variants={rightArticle}
           >
-            <div className="flex bg-gray-100 px-7 py-10 shadow-xl shadow-slate-400">
+            <div className="md:flex md:justify-around bg-gray-100 px-7 py-7 shadow-xl shadow-slate-400">
               <div className="flex flex-col justify-center text-gray-700">
                 <h5 className="text-2xl ml-3 mb-6">My Profile</h5>
                 <div className="mx-4 mb-5 font-bold">
@@ -116,7 +115,6 @@ export default function HomePage() {
             </Link>
           </div>
         </div>
-
       </Layout>
     </>
   );
