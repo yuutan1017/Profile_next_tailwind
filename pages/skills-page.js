@@ -14,7 +14,7 @@ export default function Skills() {
       <div className="flex flex-wrap mt-8 mx-10">
         <div className="w-full">
           <ul
-            className="flex mb-0 list-none flex-wrap pt-3 pb-4"
+            className="flex mb-1 list-none flex-wrap pt-2 pb-2"
             role="tablist"
           >
             <li className="mr-auto last:mr-0 text-center flex-auto">
@@ -70,8 +70,8 @@ export default function Skills() {
         </div>
       </div>
 
-      <div className="container flex m-8 justify-center">
-        <Link href="/home-page">
+      <div className="container flex m-4 justify-center">
+        <Link href="/">
           <motion.svg
             animate="visible"
             initial="hidden"
