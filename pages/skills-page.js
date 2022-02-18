@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import Link from "next/link";
 
-import Layout from "../components/Layout";
-import { rightArrowAnimation,leftArrowAnimation } from "../components/animate/Animation";
-import Lan_skills from "../components/LanguageSkills";
-import Others_skills from "../components/OthersSkills";
+import Layout from "../components/main/Layout";
+
+import Lan_skills from "../components/skills-page/LanguageSkills";
+import Others_skills from "../components/skills-page/OthersSkills";
+import { RightArrow } from "../components/arrow/RightArrow";
+import { LeftArrow } from "../components/arrow/LeftArrow";
 
 export default function Skills() {
   const [openTab, setOpenTab] = useState(1);
@@ -56,7 +57,7 @@ export default function Skills() {
               </a>
             </li>
           </ul>
-          <div className="relative flex flex-col min-w-0 bg-gray-100 w-full mb-6 shadow-2xl rounded">
+          <motion.div className="relative flex flex-col min-w-0 bg-gray-100 w-full mb-6 shadow-2xl rounded">
             <div className="px-6 py-6 flex-auto">
               <div className={openTab === 1 ? "block" : "hidden"} id="link1">
                 <Lan_skills />
@@ -66,50 +67,15 @@ export default function Skills() {
                 <Others_skills />
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
 
       <div className="container flex m-4 justify-center">
-        <Link href="/">
-          <motion.svg
-            animate="visible"
-            initial="hidden"
-            variants={leftArrowAnimation}
-            xmlns="http://www.w3.org/2000/svg"
-            className="h-12 w-12 cursor-pointer mx-10"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={3}
-              d="M11 19l-7-7 7-7m8 14l-7-7 7-7"
-            />
-          </motion.svg>
-        </Link>
+
+        <LeftArrow title="/" />
+        <RightArrow title="/portfolio-page" />
         
-        <Link href="/portfolio-page">
-          <motion.svg
-            animate="visible"
-            initial="hidden"
-            variants={rightArrowAnimation}
-            xmlns="http://www.w3.org/2000/svg"
-            className="h-12 w-12 cursor-pointer mx-10"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={3}
-              d="M13 5l7 7-7 7M5 5l7 7-7 7"
-            />
-          </motion.svg>
-        </Link>
       </div>
     </Layout>
   );

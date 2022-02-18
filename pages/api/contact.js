@@ -31,7 +31,7 @@ export default async (req, res) => {
   };
 
   transporter.sendMail(toHostMailData, (error, response) => {
-    // console.log(error || response);
-    // res.status(200).end()
+    console.log(error || response);
+    res.status(200).end()
   });
 };

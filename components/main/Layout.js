@@ -1,10 +1,8 @@
 import React from "react";
 import Head from "next/head";
-import { motion } from "framer-motion";
 
 import { Header } from "./Header";
 import { Footer } from "./Footer";
-import { pageTransition } from "./animate/Animation";
 
 export default function Layout({ children }) {
   return (
@@ -16,16 +14,11 @@ export default function Layout({ children }) {
 
       <Header />
 
-      <motion.main
-        initial="hidden"
-        animate="visible"
-        exit="exit"
-        variants={pageTransition}
-        transition={{ type: "linear" }}
+      <main
         className="flex flex-auto justify-center items-center flex-col w-screen"
       >
         {children}
-      </motion.main>
+      </main>
 
       <Footer />
     </div>
