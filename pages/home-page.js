@@ -1,8 +1,8 @@
 import React from "react";
 
 import Layout from "../components/main/Layout";
-import { ProfileText } from "../components/Homepage/ProfileText";
-import { ProfileCard } from "../components/Homepage/ProfileCard";
+import { ProfileText } from "../components/home-page/ProfileText";
+import { ProfileCard } from "../components/home-page/ProfileCard";
 import { RightArrow } from "../components/arrow/RightArrow";
 
 
@@ -16,10 +16,8 @@ export default function HomePage() {
         <ProfileCard />
 
       </div>
-      <div className="flex justify-center items-center">
-        <div className="mx-5 cursor-pointer">
+      <div className="container flex justify-center items-center">
           <RightArrow title="/skills-page" />
-        </div>
       </div>
     </Layout>
   );

@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 
-import { helloUser, leftArticle } from "../animate/Animation";
+import { helloUser, leftArticleAnimation } from "../animate/Animation";
 
 export const ProfileText = () => {
   return (
@@ -10,7 +10,7 @@ export const ProfileText = () => {
       initial="hidden"
       animate="visible"
       exit="exit"
-      variants={leftArticle}
+      variants={leftArticleAnimation}
       className="flex flex-wrap mt-auto mb-auto content-start m-4 xl:px-10"
     >
       <div className="w-full  mb-6 mr-14 md:mr-0">

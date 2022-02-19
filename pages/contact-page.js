@@ -1,8 +1,10 @@
 import React from "react";
 import axios from "axios";
+import { motion } from "framer-motion";
 import { useForm } from "react-hook-form";
 
 import Layout from "../components/main/Layout";
+import { contactAnimation } from "../components/animate/Animation";
 import { LeftArrow } from "../components/arrow/LeftArrow";
 
 export default function Contact() {
@@ -25,7 +27,12 @@ export default function Contact() {
 
   return (
     <Layout>
-      <div className="md:w-7/12 md:p-5 text-center bg-white shadow-2xl w-11/12 rounded font-sans max-w-3xl mt-7">
+      <motion.div
+        initial="hidden"
+        animate="visible"
+        exit="exit"
+        variants={contactAnimation}
+        className="md:w-7/12 md:p-5 text-center bg-white shadow-2xl w-11/12 rounded font-sans max-w-3xl mt-7">
         <div className="container m-3">
           <h1 className="text-3xl text-gray-700">Contact Form</h1>
         </div>
@@ -126,9 +133,9 @@ export default function Contact() {
             </div>
           </form>
         </div>
-      </div>
+      </motion.div>
 
-      <div className="justify-center flex mb-0 mt-8">
+      <div className="container justify-center flex mb-0 mt-8">
         <LeftArrow title="/portfolio-page" />
       </div>
     </Layout>

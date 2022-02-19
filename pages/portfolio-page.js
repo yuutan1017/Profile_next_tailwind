@@ -8,7 +8,7 @@ export default function Portfolio() {
   return (
     <div>
       <Layout>
-        <div className="flex">
+        <div className="container flex justify-center items-center">
           <LeftArrow title="/skills-page" />
           <RightArrow title="/contact-page" />
         </div>
