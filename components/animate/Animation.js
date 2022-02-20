@@ -1,4 +1,3 @@
-
 export const helloUser = {
   visible: {
     opacity: 1,
@@ -35,8 +34,8 @@ export const rightArticleAnimation = {
     x: -200,
     y: 200,
     transition: {
-      duration: 0.6
-    }
+      duration: 0.6,
+    },
   },
 };
 
@@ -47,7 +46,7 @@ export const leftArticleAnimation = {
     y: 0,
     transition: {
       duration: 0.8,
-      delay: 0.4
+      delay: 0.4,
     },
   },
   hidden: {
@@ -61,8 +60,8 @@ export const leftArticleAnimation = {
     y: -200,
     transition: {
       duration: 0.6,
-      delay: 0.2
-    }
+      delay: 0.2,
+    },
   },
 };
 
@@ -73,7 +72,7 @@ export const skillsAnimation = {
     transition: {
       duration: 0.5,
       delay: 0.8,
-    }
+    },
   },
   hidden: {
     opacity: 0,
@@ -84,15 +83,15 @@ export const skillsAnimation = {
     x: -300,
     transition: {
       duration: 0.7,
-    }
-  }
-}
+    },
+  },
+};
 
 export const portfolioAnimation = {
   visible: {},
   hidden: {},
-  exit: {}
-}
+  exit: {},
+};
 
 export const contactAnimation = {
   visible: {
@@ -100,8 +99,8 @@ export const contactAnimation = {
     y: 0,
     transition: {
       duration: 0.7,
-      delay: 0.8
-    }
+      delay: 0.8,
+    },
   },
   hidden: {
     opacity: 0,
@@ -112,9 +111,9 @@ export const contactAnimation = {
     y: -200,
     transition: {
       duration: 0.7,
-    }
-  }
-}
+    },
+  },
+};
 
 export const rightArrowAnimation = {
   visible: {
@@ -134,8 +133,8 @@ export const rightArrowAnimation = {
     x: 200,
     transition: {
       duration: 0.7,
-    }
-  }
+    },
+  },
 };
 
 export const leftArrowAnimation = {
@@ -148,7 +147,7 @@ export const leftArrowAnimation = {
     },
   },
   hidden: {
-    opacity: 0.1,
+    opacity: 0,
     x: -100,
   },
   exit: {
@@ -156,6 +155,6 @@ export const leftArrowAnimation = {
     x: -200,
     transition: {
       duration: 0.7,
-    }
-  }
+    },
+  },
 };

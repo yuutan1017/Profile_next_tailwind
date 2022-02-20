@@ -19,10 +19,10 @@ export default function Contact() {
       },
       data: values,
     };
-
+    reset();
     const response = await axios(config);
     // console.log(response);
-    reset();
+    alert("Accept sendMail")
   }
 
   return (
