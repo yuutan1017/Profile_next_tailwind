@@ -19,7 +19,8 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 
 ## Package
 
-・next : 12.0.7
-・tailwindcss : 3.0.8
-・framer-motion : 5.6.0
-・nodemailer : 6.7.2
+ - ・next : 12.0.7
+ - ・tailwindcss : 3.0.8
+ - ・framer-motion : 5.6.0
+ - ・nodemailer : 6.7.2
+ - ・react-circular-progress-bar : 1.1.1

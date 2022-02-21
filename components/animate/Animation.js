@@ -158,3 +158,29 @@ export const leftArrowAnimation = {
     },
   },
 };
+
+export const backdropVariant = {
+  hidden: {
+    opacity: 0,
+  },
+  visible: {
+    opacity: 1,
+    transition: {
+      duration: 1,
+      delayChildren: 0.2, // To delay the child animation
+    },
+  },
+};
+ 
+export const modalVariant = {
+  hidden: {
+    y: "-100vh",
+  },
+  visible: {
+    y: 0,
+    transition: {
+      type: "spring", // Transition type animation used is spring
+      stiffness: 70, // Stiffness of spring
+    },
+  },
+};
