@@ -87,10 +87,36 @@ export const skillsAnimation = {
   },
 };
 
-export const portfolioAnimation = {
-  visible: {},
-  hidden: {},
-  exit: {},
+export const portfolioAnimation_L = {
+  visible: {
+    opacity: 1,
+    transition: {
+      delay: 0.6,
+    }
+  },
+  hidden: {
+    opacity: 0
+  },
+  exit: {
+    rotate: 360,
+    opacity: 0,
+  },
+};
+
+export const portfolioAnimation_R = {
+  visible: {
+    opacity: 1,
+    transition: {
+      delay: 0.6,
+    }
+  },
+  hidden: {
+    opacity: 0
+  },
+  exit: {
+    rotate: -360,
+    opacity: 0,
+  },
 };
 
 export const contactAnimation = {

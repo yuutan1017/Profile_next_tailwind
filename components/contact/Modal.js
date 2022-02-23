@@ -8,23 +8,17 @@ export const Modal = ({isOpen, setIsOpen}) => {
     <AnimatePresence>
       {isOpen && (
         <motion.div
-          className="modal-backdrop"
+          className="fixed grid place-items-center w-screen h-[110%] bg-gray-400/[.5]"
           variants={backdropVariant}
           initial="hidden"
           animate="visible"
           exit="hidden"
         >
           <motion.div
-            className="modal-container"
+            className="container flex flex-col p-16 w-2/6 items-center relative bg-neutral-50 shadow-2xl border-2 rounded-lg font-bold text-6xl"
             variants={modalVariant}
           >
-            <h1>Modal Header</h1>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro
-              reprehenderit dolores iure facilis libero repellendus pariatur,
-              totam voluptate magnam dolorem assumenda soluta. Repellendus
-              praesentium, ducimus corporis ab odio dignissimos quam?
-            </p>
+            <h1>A R I G A T O ! !</h1>
             <div className="close" onClick={() => setIsOpen(false)}>
               <div></div>
               <div></div>
