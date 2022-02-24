@@ -11,7 +11,7 @@ export const ProfileText = () => {
       animate="visible"
       exit="exit"
       variants={leftArticleAnimation}
-      className="flex flex-wrap mt-auto mb-auto content-start m-4 xl:px-10"
+      className="flex flex-wrap mb-auto m-4 xl:px-10 xl:py-4"
     >
       <div className="w-full mb-6 mr-14 md:mr-0">
         <motion.h1

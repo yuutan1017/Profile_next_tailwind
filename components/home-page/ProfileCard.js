@@ -11,9 +11,9 @@ export const ProfileCard = () => {
       animate="visible"
       exit="exit"
       variants={rightArticleAnimation}
-      className="container ml-14 px-10 py-3 text-center md:text-left mt-5 xl:mt-0"
+      className="container ml-14 p-8 text-center md:text-left xl:mt-0"
     >
-      <div className="lg:flex md:justify-around px-2 py-7 bg-gray-50 shadow-2xl shadow-neutral-400 border-2">
+      <div className="lg:flex md:justify-around px-2 py-5 bg-white shadow-2xl border-2">
         <div className="xl:flex xl:flex-col justify-center text-gray-700">
           <h5 className="text-2xl ml-3 md:mb-6 mb-3">My Profile</h5>
           <div className="mx-4 mb-5 font-bold">

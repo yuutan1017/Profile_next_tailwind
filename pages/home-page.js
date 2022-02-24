@@ -9,16 +9,18 @@ import { RightArrow } from "../components/arrow/RightArrow";
 export default function HomePage() {
   return (
     <Layout>
-      <div className="container md:py-24 md:mx-auto md:flex py-12">
+      <div className="container px-10">
+      <div className="md:flex md:py-24 py-12">
 
         <ProfileText />
 
         <ProfileCard />
 
       </div>
-      <div className="container flex justify-center items-center">
+      <div className="flex justify-center items-center">
           <RightArrow title="/skills-page" />
-      </div>
+        </div>
+        </div>
     </Layout>
   );
 }

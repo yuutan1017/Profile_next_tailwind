@@ -25,7 +25,7 @@ export const rightArticleAnimation = {
     },
   },
   hidden: {
-    opacity: 0,
+    opacity: 0.1,
     x: 200,
     y: -200,
   },
@@ -50,7 +50,7 @@ export const leftArticleAnimation = {
     },
   },
   hidden: {
-    opacity: 0,
+    opacity: 0.1,
     x: -200,
     y: 200,
   },
@@ -90,34 +90,55 @@ export const skillsAnimation = {
 export const portfolioAnimation_L = {
   visible: {
     opacity: 1,
+    x: 0,
+    rotate: 0,
     transition: {
       delay: 0.6,
+      duration: 1,
     }
   },
   hidden: {
-    opacity: 0
+    rotate: -270,
+    x: -800,
+    opacity: 0.1
   },
   exit: {
-    rotate: 360,
-    opacity: 0,
+    rotate: 180,
+    x: -800,
+    opacity: 0.1,
   },
+  spring: {
+    type: "spring",
+    stiffness: 30,
+  }
 };
 
 export const portfolioAnimation_R = {
   visible: {
     opacity: 1,
+    x: 0,
+    rotate: 0,
     transition: {
       delay: 0.6,
+      duration: 1,
     }
   },
   hidden: {
-    opacity: 0
+    rotate: 270,
+    x: 800,
+    opacity: 0.1
   },
   exit: {
-    rotate: -360,
-    opacity: 0,
+    rotate: -180,
+    x: 800,
+    opacity: 0.1,
   },
+  spring: {
+    type: "spring",
+    stiffness: 30,
+  }
 };
+
 
 export const contactAnimation = {
   visible: {
@@ -193,7 +214,7 @@ export const backdropVariant = {
     opacity: 1,
     transition: {
       duration: 1,
-      delayChildren: 0.2, // To delay the child animation
+      delayChildren: 0.2,
     },
   },
 };
@@ -205,8 +226,8 @@ export const modalVariant = {
   visible: {
     y: 0,
     transition: {
-      type: "spring", // Transition type animation used is spring
-      stiffness: 70, // Stiffness of spring
+      type: "spring",
+      stiffness: 70,
     },
   },
 };

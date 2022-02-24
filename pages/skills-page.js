@@ -19,19 +19,20 @@ export default function Skills() {
         animate="visible"
         exit="exit"
         variants={skillsAnimation}
-        className="flex flex-wrap mt-8 mx-10">
-        <div className="w-full">
+        className="flex flex-wrap mt-8 mx-10 shadow-2xl"
+      >
+        <div>
           <ul
-            className="flex mb-1 list-none flex-wrap pt-2 pb-2"
+            className="flex list-none flex-wrap"
             role="tablist"
           >
             <li className="mr-auto last:mr-0 text-center flex-auto">
               <a
                 className={
-                  "text-xs font-bold px-5 py-3 shadow-lg rounded block leading-normal " +
+                  "text-xs font-bold px-5 py-3 rounded block leading-normal " +
                   (openTab === 1
                     ? "text-white bg-teal-400"
-                    : "text-gray-600 bg-gray-100")
+                    : "text-gray-600 bg-white")
                 }
                 onClick={(e) => {
                   e.preventDefault();
@@ -47,10 +48,10 @@ export default function Skills() {
             <li className="ml-auto last:mr-0 flex-auto text-center">
               <a
                 className={
-                  "text-xs font-bold px-5 py-3 shadow-lg rounded block leading-normal " +
+                  "text-xs font-bold px-5 py-3 rounded block leading-normal " +
                   (openTab === 2
                     ? "text-white bg-teal-400"
-                    : "text-gray-600 bg-gray-100")
+                    : "text-gray-600 bg-white")
                 }
                 onClick={(e) => {
                   e.preventDefault();
@@ -64,7 +65,7 @@ export default function Skills() {
               </a>
             </li>
           </ul>
-          <div className="relative flex flex-col min-w-0 bg-gray-100 w-full mb-6 shadow-2xl rounded">
+          <div className="relative flex flex-col min-w-0 bg-white w-full  rounded border-2">
             <div className="px-6 py-6 flex-auto">
               <div className={openTab === 1 ? "block" : "hidden"} id="link1">
                 <Lan_skills />
@@ -78,11 +79,9 @@ export default function Skills() {
         </div>
       </motion.div>
 
-      <div className="container flex m-4 justify-center">
-
+      <div className="container flex m-4 pt-5 justify-center">
         <LeftArrow title="/" />
         <RightArrow title="/portfolio-page" />
-        
       </div>
     </Layout>
   );

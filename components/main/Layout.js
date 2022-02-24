@@ -6,7 +6,7 @@ import { Footer } from "./Footer";
 
 export default function Layout({ children }) {
   return (
-    <div className="flex flex-col items-center min-h-screen text-gray-600 text-sm font-sans bg-gradient-to-r from-white via-yellow-50 to-teal-200">
+    <div className="flex flex-col items-center min-h-screen text-gray-600 font-sans bg-gradient-to-r from-white via-yellow-50 to-teal-200">
       <Head>
         <link rel="icon" href="/image/YLog-icon.ico" />
         <title>YLog</title>
