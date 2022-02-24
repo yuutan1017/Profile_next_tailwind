@@ -12,15 +12,15 @@ import {
 export default function Portfolio() {
   return (
     <Layout>
-      <div className="container">
-        <div className="flex justify-center mb-8 p-20">
+      <div className="container max-w-full">
+        <div className="flex justify-center py-24">
           <motion.div
             initial="hidden"
             animate="visible"
             exit="exit"
             transition="spring"
             variants={portfolioAnimation_L}
-            class="h-full w-1/3 bg-gray-100 mr-4 pb-24 rounded-3xl text-center border-2 shadow-2xl"
+            class="h-full w-3/12 bg-gray-100 mr-4 pb-24 rounded-3xl text-center border-2 shadow-2xl"
           >
             <img
               className="w-full h-40 object-center object-cover"
@@ -40,7 +40,7 @@ export default function Portfolio() {
             exit="exit"
             transition="spring"
             variants={portfolioAnimation_R}
-            class="h-full w-1/3 bg-gray-100 ml-4 pb-24 rounded-3xl text-center border-2 shadow-2xl"
+            class="h-full w-3/12 bg-gray-100 ml-4 pb-24 rounded-3xl text-center border-2 shadow-2xl"
           >
             <img
               className="w-full h-40 object-center object-cover"

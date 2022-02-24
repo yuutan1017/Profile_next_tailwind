@@ -100,12 +100,12 @@ export const portfolioAnimation_L = {
   hidden: {
     rotate: -270,
     x: -800,
-    opacity: 0.1
+    opacity: 0
   },
   exit: {
     rotate: 180,
     x: -800,
-    opacity: 0.1,
+    opacity: 0,
   },
   spring: {
     type: "spring",
@@ -126,12 +126,12 @@ export const portfolioAnimation_R = {
   hidden: {
     rotate: 270,
     x: 800,
-    opacity: 0.1
+    opacity: 0
   },
   exit: {
     rotate: -180,
     x: 800,
-    opacity: 0.1,
+    opacity: 0,
   },
   spring: {
     type: "spring",
