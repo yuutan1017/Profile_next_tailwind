@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import axios from "axios";
 import { motion } from "framer-motion";
 import { useForm } from "react-hook-form";
@@ -6,9 +6,11 @@ import { useForm } from "react-hook-form";
 import Layout from "../components/main/Layout";
 import { contactAnimation } from "../components/animate/Animation";
 import { LeftArrow } from "../components/arrow/LeftArrow";
+import { Modal } from "../components/contact/Modal";
 
 export default function Contact() {
   const { register, handleSubmit, errors, reset } = useForm();
+  const [ isOpen, setIsOpen ] = useState(false);
 
   async function onSubmitForm(values) {
     let config = {
@@ -22,7 +24,7 @@ export default function Contact() {
     reset();
     const response = await axios(config);
     // console.log(response);
-    alert("Accept sendMail")
+    setIsOpen(true);
   }
 
   return (
@@ -32,7 +34,8 @@ export default function Contact() {
         animate="visible"
         exit="exit"
         variants={contactAnimation}
-        className="md:w-7/12 md:p-5 text-center bg-white shadow-2xl w-11/12 rounded font-sans max-w-3xl mt-7">
+        className="md:w-7/12 md:p-5 text-center bg-white shadow-2xl w-11/12 rounded font-sans max-w-3xl mt-7"
+      >
         <div className="m-3">
           <h1 className="text-3xl text-gray-700">Contact Form</h1>
         </div>
@@ -134,6 +137,8 @@ export default function Contact() {
           </form>
         </div>
       </motion.div>
+
+      <Modal isOpen={isOpen} setIsOpen={setIsOpen} />
 
       <div className="container justify-center flex mb-0 mt-8">
         <LeftArrow title="/portfolio-page" />

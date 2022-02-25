@@ -27,7 +27,7 @@ export const ProfileCard = () => {
         </div>
         <Image
           className="object-cover rounded-full"
-          src="/image/profile.png"
+          src="/image/fox.jpg"
           width={300}
           height={300}
         />

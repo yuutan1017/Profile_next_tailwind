@@ -1,7 +1,7 @@
 import React from "react";
 import { CircularProgressBar } from "@tomik23/react-circular-progress-bar";
 
-export default function Others_skills() {
+export const Others_skills = () => {
   return (
     <div className="flex flex-wrap justify-center max-w-5xl m-4">
       <div className="flex-col items-center px-7 py-4">
