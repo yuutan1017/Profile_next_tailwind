@@ -1,6 +1,6 @@
 import React from "react";
 
-import Layout from "../components/main/Layout";
+import { Layout } from "../components/main/Layout";
 import { ProfileText } from "../components/home-page/ProfileText";
 import { ProfileCard } from "../components/home-page/ProfileCard";
 import { RightArrow } from "../components/arrow/RightArrow";

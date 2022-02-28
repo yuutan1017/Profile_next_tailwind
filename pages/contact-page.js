@@ -3,7 +3,7 @@ import axios from "axios";
 import { motion } from "framer-motion";
 import { useForm } from "react-hook-form";
 
-import Layout from "../components/main/Layout";
+import { Layout } from "../components/main/Layout";
 import { contactAnimation } from "../components/animate/Animation";
 import { LeftArrow } from "../components/arrow/LeftArrow";
 import { Modal } from "../components/contact/Modal";

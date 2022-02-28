@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-import Layout from "../components/main/Layout";
+import { Layout } from "../components/main/Layout";
 import { RightArrow } from "../components/arrow/RightArrow";
 import { LeftArrow } from "../components/arrow/LeftArrow";
 import {

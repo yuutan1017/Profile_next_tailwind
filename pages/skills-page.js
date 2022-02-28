@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 
-import Layout from "../components/main/Layout";
+import { Layout } from "../components/main/Layout";
 
 import { Lan_skills } from "../components/skills-page/LanguageSkills";
 import { Others_skills } from "../components/skills-page/OthersSkills";
