@@ -25,7 +25,7 @@ export const rightArticleAnimation = {
     },
   },
   hidden: {
-    opacity: 0.1,
+    opacity: 0,
     x: 200,
     y: -200,
   },
@@ -50,7 +50,7 @@ export const leftArticleAnimation = {
     },
   },
   hidden: {
-    opacity: 0.1,
+    opacity: 0,
     x: -200,
     y: 200,
   },
@@ -95,12 +95,12 @@ export const portfolioAnimation_L = {
     transition: {
       delay: 0.6,
       duration: 1,
-    }
+    },
   },
   hidden: {
     rotate: -270,
     x: -800,
-    opacity: 0
+    opacity: 0,
   },
   exit: {
     rotate: 180,
@@ -110,7 +110,7 @@ export const portfolioAnimation_L = {
   spring: {
     type: "spring",
     stiffness: 30,
-  }
+  },
 };
 
 export const portfolioAnimation_R = {
@@ -121,12 +121,12 @@ export const portfolioAnimation_R = {
     transition: {
       delay: 0.6,
       duration: 1,
-    }
+    },
   },
   hidden: {
     rotate: 270,
     x: 800,
-    opacity: 0
+    opacity: 0,
   },
   exit: {
     rotate: -180,
@@ -136,9 +136,8 @@ export const portfolioAnimation_R = {
   spring: {
     type: "spring",
     stiffness: 30,
-  }
+  },
 };
-
 
 export const contactAnimation = {
   visible: {
@@ -218,7 +217,7 @@ export const backdropVariant = {
     },
   },
 };
- 
+
 export const modalVariant = {
   hidden: {
     y: "-100vh",

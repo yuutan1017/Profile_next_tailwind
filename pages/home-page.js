@@ -5,22 +5,19 @@ import { ProfileText } from "../components/home-page/ProfileText";
 import { ProfileCard } from "../components/home-page/ProfileCard";
 import { RightArrow } from "../components/arrow/RightArrow";
 
-
 export default function HomePage() {
   return (
     <Layout>
-      <div className="container px-10">
-      <div className="md:flex md:py-24 py-12">
+      <div className="sm:container sm:px-10">
+        <div className="md:flex md:py-24 py-6">
+          <ProfileText />
 
-        <ProfileText />
-
-        <ProfileCard />
-
-      </div>
-      <div className="flex justify-center items-center">
+          <ProfileCard />
+        </div>
+        <div className="flex justify-center items-center">
           <RightArrow title="/skills-page" />
         </div>
-        </div>
+      </div>
     </Layout>
   );
 }
