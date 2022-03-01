@@ -8,10 +8,9 @@ import { RightArrow } from "../components/arrow/RightArrow";
 export default function HomePage() {
   return (
     <Layout>
-      <div className="sm:container sm:px-10">
-        <div className="md:flex md:py-24 py-6">
+      <div className="max-w-full">
+        <div className="shrink-0 flex flex-col md:flex-row justify-center md:py-24 py-12">
           <ProfileText />
-
           <ProfileCard />
         </div>
         <div className="flex justify-center items-center">

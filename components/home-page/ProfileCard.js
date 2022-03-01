@@ -11,11 +11,11 @@ export const ProfileCard = () => {
       animate="visible"
       exit="exit"
       variants={rightArticleAnimation}
-      className="container ml-14 p-8 text-center md:text-left xl:mt-0"
+      className="text-center md:mr-16"
     >
-      <div className="lg:flex md:justify-around px-2 py-5 bg-white shadow-2xl border-2">
-        <div className="xl:flex xl:flex-col justify-center text-gray-700">
-          <h5 className="text-2xl ml-3 md:mb-6 mb-3">My Profile</h5>
+      <div className="flex md:flex-row-reverse flex-col-reverse justify-around px-10 py-5 m-3 bg-white shadow-xl">
+        <div className="text-gray-700 md:ml-5">
+          <h5 className="text-2xl md:mb-6 mt-4 mb-3">My Profile</h5>
           <div className="mx-4 mb-5 font-bold">
             <p className="mt-2">Name</p>
             <p className="text-xl my-2">Yuta Nakamura</p>

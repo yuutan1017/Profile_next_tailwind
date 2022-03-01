@@ -17,7 +17,7 @@ export const helloUser = {
 export const rightArticleAnimation = {
   visible: {
     opacity: 1,
-    x: -55,
+    x: 0,
     y: 0,
     transition: {
       duration: 0.8,
@@ -42,7 +42,7 @@ export const rightArticleAnimation = {
 export const leftArticleAnimation = {
   visible: {
     opacity: 1,
-    x: 55,
+    x: 0,
     y: 0,
     transition: {
       duration: 0.8,

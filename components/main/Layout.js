@@ -14,13 +14,11 @@ export const Layout = ({ children }) => {
 
       <Header />
 
-      <main
-        className="flex flex-auto justify-center items-center flex-col w-screen"
-      >
+      <main className="flex flex-col flex-auto justify-center items-center w-screen">
         {children}
       </main>
 
       <Footer />
     </div>
   );
-}
+};
