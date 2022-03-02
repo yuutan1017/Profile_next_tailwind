@@ -80,7 +80,7 @@ export const skillsAnimation = {
   },
   exit: {
     opacity: 0,
-    x: -300,
+    y: 200,
     transition: {
       duration: 0.7,
     },

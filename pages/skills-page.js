@@ -79,7 +79,7 @@ export default function Skills() {
         </div>
       </motion.div>
 
-      <div className="container flex m-4 pt-5 justify-center">
+      <div className="flex w-full m-4 pt-5 justify-center">
         <LeftArrow title="/" />
         <RightArrow title="/portfolio-page" />
       </div>
