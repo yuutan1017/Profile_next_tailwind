@@ -5,7 +5,8 @@ import { portfolioAnimation_L } from "../animate/Animation";
 
 export const Card_1 = () => {
   return (
-    <motion.div
+    <motion.a
+      href="/"
       initial="hidden"
       animate="visible"
       exit="exit"
@@ -24,6 +25,6 @@ export const Card_1 = () => {
         Photo booth fam kinfolk cold-pressed sriracha leggings jianbing
         microdosing tousled waistcoat.
       </p>
-    </motion.div>
+    </motion.a>
   );
 };
