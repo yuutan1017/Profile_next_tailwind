@@ -23,7 +23,7 @@ export default function Skills() {
       >
         <div>
           <ul
-            className="flex list-none flex-wrap"
+            className="flex list-none flex-wrap shadow-md"
             role="tablist"
           >
             <li className="mr-auto last:mr-0 text-center flex-auto">
@@ -65,7 +65,7 @@ export default function Skills() {
               </a>
             </li>
           </ul>
-          <div className="relative flex flex-col min-w-0 bg-white w-full  rounded border-2">
+          <div className="relative flex flex-col min-w-0 bg-white w-full  rounded mt-3">
             <div className="px-6 py-6 flex-auto">
               <div className={openTab === 1 ? "block" : "hidden"} id="link1">
                 <Lan_skills />

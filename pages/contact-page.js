@@ -10,7 +10,7 @@ import { Modal } from "../components/contact/Modal";
 
 export default function Contact() {
   const { register, handleSubmit, errors, reset } = useForm();
-  const [ isOpen, setIsOpen ] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
   async function onSubmitForm(values) {
     let config = {

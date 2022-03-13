@@ -7,9 +7,11 @@ export const Header = () => {
   return (
     <header>
       <nav className="w-screen">
-        <div className="flex items-center h-14 sm:px-10 sm:ml-auto py-3 text-slate-900">
-          <Image src="/image/YLog.png" width={60} height={60} />
-          <a className="text-xl font-bold mb-2">YLog</a>
+        <div className="flex items-center h-14 sm:px-10 sm:ml-auto py-6 text-slate-900">
+          <Image src="/image/YLogIcon.png" width={50} height={50} />
+          <Link href="/">
+            <a className="text-2xl font-bold mb-2">YLog</a>
+          </Link>
           <div className="ml-auto md:space-x-3 sm:inline-block hidden">
             <Link href="/">
               <motion.button
