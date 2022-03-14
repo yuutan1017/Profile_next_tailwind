@@ -13,7 +13,7 @@ export const ProfileCard = () => {
       variants={rightArticleAnimation}
       className="text-center md:mr-16"
     >
-      <div className="flex md:flex-row-reverse flex-col-reverse justify-around px-10 py-5 m-3 bg-white shadow-md">
+      <div className="flex md:flex-row-reverse flex-col-reverse justify-around rounded-xl px-10 py-5 m-8 bg-white shadow-custom">
         <div className="text-gray-700 md:ml-5">
           <h5 className="text-2xl md:mb-6 mt-4 mb-3">My Profile</h5>
           <div className="mx-4 mb-5 font-bold">

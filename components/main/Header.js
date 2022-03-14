@@ -8,9 +8,9 @@ export const Header = () => {
     <header>
       <nav className="w-screen">
         <div className="flex items-center h-14 sm:px-10 sm:ml-auto py-6 text-slate-900">
-          <Image src="/image/YLogIcon.png" width={50} height={50} />
+          <Image src="/image/YLogIcon.png" width={45} height={45} />
           <Link href="/">
-            <a className="text-2xl font-bold mb-2">YLog</a>
+            <a className="text-2xl font-bold my-2 ml-2">YLog</a>
           </Link>
           <div className="ml-auto md:space-x-3 sm:inline-block hidden">
             <Link href="/">
