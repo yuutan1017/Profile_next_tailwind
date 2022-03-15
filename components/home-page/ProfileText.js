@@ -39,14 +39,14 @@ export const ProfileText = () => {
         </Link>
         <Link href="/contact-page" passHref>
           <motion.img
-            src="/image/gmail.png"
+            src="/icons/gmail.png"
             className="w-12 h-12 items-cetnter cursor-pointer mx-10"
             whileHover={{ scale: 1.5 }}
           />
         </Link>
         <Link href="/skills-page" passHref>
           <motion.img
-            src="/image/personal.png"
+            src="/icons/personal.png"
             className="w-12 h-12 items-center cursor-pointer md:mx-10"
             whileHover={{ scale: 1.5 }}
           />
