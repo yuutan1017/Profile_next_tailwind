@@ -1,6 +1,6 @@
 {
   "name": "portfolio-site-next-tail",
-  "private": true,
+  "private": false,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
