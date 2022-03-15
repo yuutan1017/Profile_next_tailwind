@@ -15,10 +15,10 @@ export const Card_2 = () => {
     >
       <img
         className="w-full h-40 object-top object-cover rounded-t-3xl"
-        src="/image/profile.png"
+        src="/image/nuko.jpeg"
       />
       <h1 className="title-font sm:text-2xl text-xl font-medium text-gray-900 my-5">
-        注文フォーム
+        準備中
       </h1>
       <p className="leading-relaxed px-5">
         Photo booth fam kinfolk cold-pressed sriracha leggings jianbing
