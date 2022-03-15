@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import { CircularProgressBar } from "@tomik23/react-circular-progress-bar";
 
 export const Others_skills = () => {
@@ -22,7 +23,11 @@ export const Others_skills = () => {
           }}
         />
         <div className="flex justify-center mt-4">
-          <img src="https://img.icons8.com/color/48/000000/amazon-web-services.png"
+          <Image
+            src="/icons/amazon-web-services.png"
+            alt="aws"
+            width={50}
+            height={50}
           />
         </div>
       </div>
@@ -45,10 +50,7 @@ export const Others_skills = () => {
           }}
         />
         <div className="flex justify-center mt-2">
-          <img
-            src="/icons/git_icon.png"
-            width="70"
-          />
+          <Image src="/icons/git_icon.png" alt="git" width={70} height={70} />
         </div>
       </div>
 
@@ -70,12 +72,14 @@ export const Others_skills = () => {
           }}
         />
         <div className="flex justify-center mt-2">
-          <img
+          <Image
             src="/icons/docker_icon.png"
-            width="60"
+            alt="docker"
+            width={60}
+            height={60}
           />
         </div>
       </div>
     </div>
   );
-}
+};

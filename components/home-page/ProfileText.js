@@ -30,21 +30,21 @@ export const ProfileText = () => {
       </div>
 
       <div className="flex items-center justify-center py-3 md:mt-4">
-        <Link href="https://github.com/yuutan1017">
+        <Link href="https://github.com/yuutan1017" passHref>
           <motion.img
             src="/icons/github_icon.png"
             className="w-14 h-14 items-cetnter cursor-pointer md:mx-10"
             whileHover={{ scale: 1.5 }}
           />
         </Link>
-        <Link href="/contact-page">
+        <Link href="/contact-page" passHref>
           <motion.img
             src="/image/gmail.png"
             className="w-12 h-12 items-cetnter cursor-pointer mx-10"
             whileHover={{ scale: 1.5 }}
           />
         </Link>
-        <Link href="/skills-page">
+        <Link href="/skills-page" passHref>
           <motion.img
             src="/image/personal.png"
             className="w-12 h-12 items-center cursor-pointer md:mx-10"

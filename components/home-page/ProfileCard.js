@@ -28,6 +28,7 @@ export const ProfileCard = () => {
         <Image
           className="object-top object-cover rounded-full"
           src="/image/nuko.jpeg"
+          alt="profile-image"
           width={300}
           height={300}
         />

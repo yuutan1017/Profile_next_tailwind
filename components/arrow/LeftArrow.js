@@ -5,7 +5,7 @@ import { leftArrowAnimation } from "../animate/Animation";
 
 export const LeftArrow = props => {
   return (
-    <Link href={`${props.title}`}>
+    <Link href={`${props.title}`} passHref>
       <motion.svg
         animate="visible"
         initial="hidden"

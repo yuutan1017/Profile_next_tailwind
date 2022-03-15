@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import { CircularProgressBar } from "@tomik23/react-circular-progress-bar";
 
 export const Lan_skills = () => {
@@ -23,9 +24,11 @@ export const Lan_skills = () => {
           }}
         />
         <div className="flex justify-center mt-4">
-          <img
-            src="https://www.python.org/static/community_logos/python-logo-generic.svg"
-            width="130"
+          <Image
+            src="/icons/python.png"
+            alt="python"
+            width={170}
+            height={55}
           />
         </div>
       </div>
@@ -48,10 +51,12 @@ export const Lan_skills = () => {
             boxShadow: "inset 0 0 25px 10px #144434",
           }}
         />
-        <div className="flex justify-center mt-4">
-          <img
-            src="https://static.djangoproject.com/img/logos/django-logo-negative.png"
-            width="90"
+        <div className="flex justify-center">
+          <Image
+            src="/icons/django.png"
+            alt="django"
+            width={80}
+            height={80}
           />
         </div>
       </div>
@@ -75,9 +80,11 @@ export const Lan_skills = () => {
           }}
         />
         <div className="flex justify-center mt-3">
-          <img
-            src="https://www.php.net/images/logos/new-php-logo.svg"
-            width="80"
+          <Image
+            src="/icons/php.png"
+            alt="php"
+            width={80}
+            height={50}
           />
         </div>
       </div>
@@ -100,10 +107,12 @@ export const Lan_skills = () => {
             boxShadow: "inset 0 0 25px 10px #f4543c",
           }}
         />
-        <div className="flex justify-center mt-3">
-          <img
+        <div className="flex justify-center mt-2">
+          <Image
             src="/icons/laravel_icon.png"
-            width="120"
+            alt="laravel"
+            width={120}
+            height={60}
           />
         </div>
       </div>
@@ -127,9 +136,11 @@ export const Lan_skills = () => {
           }}
         />
         <div className="flex justify-center mt-2">
-          <img
-            src="https://img.icons8.com/color/48/000000/javascript--v1.png"
-            width="60"
+          <Image
+            src="/icons/javascript.png"
+            alt="javascript"
+            width={60}
+            height={60}
           />
         </div>
       </div>
@@ -153,9 +164,11 @@ export const Lan_skills = () => {
           }}
         />
         <div className="flex justify-center mt-2">
-          <img
+          <Image
             src="/icons/reactjs_icon.png"
-            width="140"
+            alt="react"
+            width={130}
+            height={60}
           />
         </div>
       </div>
@@ -179,9 +192,11 @@ export const Lan_skills = () => {
           }}
         />
         <div className="flex justify-center mt-2">
-          <img
-            src="https://www.w3.org/html/logo/downloads/HTML5_Logo.svg"
-            width="60"
+          <Image
+            src="/icons/html.png"
+            alt="html"
+            width={60}
+            height={60}
           />
         </div>
       </div>
@@ -205,9 +220,11 @@ export const Lan_skills = () => {
           }}
         />
         <div className="flex justify-center mt-2">
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg"
-            width="40"
+          <Image
+            src="/icons/css.png"
+            alt="css"
+            width={50}
+            height={60}
           />
         </div>
       </div>
