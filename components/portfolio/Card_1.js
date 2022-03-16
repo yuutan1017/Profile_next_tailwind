@@ -15,11 +15,11 @@ export const Card_1 = () => {
       variants={portfolioAnimation_L}
       className="md:h-full md:w-3/12 bg-gray-100 md:mr-4 md:pb-5 pb-5 rounded-3xl text-center border-2 shadow-2xl md:mx-auto mx-7"
     >
-      <Link href="/" passHref>
+      <Link href="https://task-controller-one.vercel.app/" passHref>
         <a className="cursor-pointer">
           <Image
             className="object-top object-cover rounded-t-3xl"
-            src="https://task-controller-one.vercel.app/"
+            src="/image/taskController.png"
             alt="taskController"
             width={800}
             height={300}
