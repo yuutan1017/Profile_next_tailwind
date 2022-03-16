@@ -19,7 +19,7 @@ export const Card_1 = () => {
         <a className="cursor-pointer">
           <Image
             className="object-top object-cover rounded-t-3xl"
-            src="/image/taskController.png"
+            src="https://task-controller-one.vercel.app/"
             alt="taskController"
             width={800}
             height={300}

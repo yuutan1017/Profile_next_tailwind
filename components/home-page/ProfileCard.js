@@ -22,7 +22,7 @@ export const ProfileCard = () => {
             <p className="mt-2 ">Age</p>
             <p className="text-xl my-2 ">26</p>
             <p className="mt-2">E-mail</p>
-            <p className="text-xl mt-2">n.you0611@gmail.com</p>
+            <p className="text-xl mt-2">n.you0611@ymail.ne.jp</p>
           </div>
         </div>
         <Image
