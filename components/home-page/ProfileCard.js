@@ -13,7 +13,7 @@ export const ProfileCard = () => {
       variants={rightArticleAnimation}
       className="text-center md:mr-16"
     >
-      <div className="flex md:flex-row-reverse flex-col-reverse justify-around rounded-xl px-10 py-5 m-8 bg-white shadow-custom">
+      <div className="flex md:flex-row-reverse flex-col-reverse justify-around border-2 border-emerald-100 px-10 py-6 m-8 bg-white shadow-xl">
         <div className="text-gray-700 md:ml-5">
           <h5 className="text-2xl md:mb-6 mt-4 mb-3">My Profile</h5>
           <div className="mx-4 mb-5 font-bold">
@@ -25,13 +25,15 @@ export const ProfileCard = () => {
             <p className="text-xl mt-2">n.you0611@ymail.ne.jp</p>
           </div>
         </div>
-        <Image
-          className="object-top object-cover rounded-full"
-          src="/image/nuko.jpeg"
-          alt="profile-image"
-          width={300}
-          height={300}
-        />
+        <div className="md:mr-10 md:mt-2">
+          <Image
+            className="object-top object-cover rounded-full"
+            src="/image/nuko.jpeg"
+            alt="profile-image"
+            width={300}
+            height={300}
+          />
+        </div>
       </div>
     </motion.div>
   );

@@ -31,7 +31,7 @@ export const Card_1 = () => {
           Task Controller
         </h1>
         <p className="leading-relaxed">
-          よくあるログイン機能付きCRUDアプリです。 勉強がてら作りました。
+          ログイン機能付きCRUDアプリです。 勉強しつつ作りました。
           <br />
           フロントエンドはTypeScript + ReduxToolkit、
           <br />

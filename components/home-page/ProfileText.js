@@ -11,7 +11,7 @@ export const ProfileText = () => {
       animate="visible"
       exit="exit"
       variants={leftArticleAnimation}
-      className="flex-col m-4 md:px-10 md:py-4"
+      className="flex-col m-5 md:px-10 md:py-4"
     >
       <motion.h1
         className="text-center md:text-left title-font font-medium text-5xl py-3 mb-8 text-gray-900 "
@@ -21,7 +21,7 @@ export const ProfileText = () => {
       >
         Thank you For Visiting!!
       </motion.h1>
-      <div className="leading-loose text-xl">
+      <div className="text-center md:text-left leading-loose text-xl">
         はじめまして。ユウタと申します。飲食店勤務5年目です。
         <br />
         趣味でプログラミングを始め、のめり込んでいくうちに仕事として携わっていきたいと思い、転職を決意。
