@@ -9,7 +9,7 @@ export default function HomePage() {
   return (
     <Layout>
       <div className="max-w-full">
-        <div className="shrink-0 flex flex-col md:flex-row justify-center md:py-24 py-12">
+        <div className="shrink-0 flex flex-col lg:flex-row justify-center lg:py-24 py-12">
           <ProfileText />
           <ProfileCard />
         </div>
