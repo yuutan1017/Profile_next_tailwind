@@ -23,7 +23,6 @@ export default function Contact() {
     };
     reset();
     const response = await axios(config);
-    // console.log(response);
     setIsOpen(true);
   }
 
