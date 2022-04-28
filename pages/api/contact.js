@@ -1,6 +1,6 @@
 import nodemailer from "nodemailer";
 
-export default async (req, res) => {
+export default (req, res) => {
   const transporter = nodemailer.createTransport({
     service: "gmail",
     port: 465,

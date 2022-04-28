@@ -41,7 +41,7 @@ export default function Contact() {
 
         <div className="md:m-4">
           <form onSubmit={handleSubmit(onSubmitForm)}>
-            <div className="mx-4 mt-6">
+            <div className="mx-4 mt-6 px-2">
               <label className="text-gray-600 text-base">
                 氏名
                 <span className="text-xs text-red-500">(必須)</span>
@@ -51,7 +51,7 @@ export default function Contact() {
                 type="text"
                 placeholder="例）氏名"
                 className={`w-full px-2 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 ${
-                  errors.name ? "focus:ring-red-300" : null
+                  errors.name ? "focus:ring-red-600" : null
                 }`}
                 ref={register({
                   required: {
@@ -61,13 +61,13 @@ export default function Contact() {
                 })}
               />
               <div className="text-justify">
-                <span className="font-bold text-red-400 text-sm py-2">
+                <span className="font-bold text-red-500 text-sm py-2">
                   {errors?.name?.message}
                 </span>
               </div>
             </div>
 
-            <div className="mt-6 mx-4">
+            <div className="mt-6 mx-4 px-2">
               <label className="text-gray-600 text-base">
                 メールアドレス
                 <span className="text-xs text-red-500">(必須)</span>
@@ -77,7 +77,7 @@ export default function Contact() {
                 type="email"
                 placeholder="例）your@example.com"
                 className={`w-full px-2 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 ${
-                  errors.name ? "focus:ring-red-300" : null
+                  errors.name ? "focus:ring-red-600" : null
                 }`}
                 ref={register({
                   required: {
@@ -97,7 +97,7 @@ export default function Contact() {
               </div>
             </div>
 
-            <div className="mt-6 mx-4">
+            <div className="mt-6 mx-4 px-2">
               <label className="block mb-2 text-sm text-gray-600">
                 お問合せ内容
                 <span className="text-xs text-red-500">(必須)</span>
@@ -107,7 +107,7 @@ export default function Contact() {
                 rows="9"
                 placeholder="お問い合わせ内容です"
                 className={`w-full px-2 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 ${
-                  errors.name ? "focus:ring-red-300" : null
+                  errors.name ? "focus:ring-red-600" : null
                 }`}
                 ref={register({
                   required: {
