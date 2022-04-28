@@ -91,25 +91,24 @@ export const portfolioAnimation_L = {
   visible: {
     opacity: 1,
     x: 0,
-    rotate: 0,
+    y: 0,
     transition: {
+      duration: 0.8,
       delay: 0.6,
-      duration: 1,
     },
   },
   hidden: {
-    rotate: -270,
-    x: -800,
     opacity: 0,
+    x: -200,
+    y: -200,
   },
   exit: {
-    rotate: 180,
-    x: -800,
     opacity: 0,
-  },
-  spring: {
-    type: "spring",
-    stiffness: 30,
+    x: 200,
+    y: 200,
+    transition: {
+      duration: 0.6,
+    },
   },
 };
 
@@ -117,25 +116,24 @@ export const portfolioAnimation_R = {
   visible: {
     opacity: 1,
     x: 0,
-    rotate: 0,
+    y: 0,
     transition: {
+      duration: 0.8,
       delay: 0.6,
-      duration: 1,
     },
   },
   hidden: {
-    rotate: 270,
-    x: 800,
     opacity: 0,
+    x: 200,
+    y: -200,
   },
   exit: {
-    rotate: -180,
-    x: 800,
     opacity: 0,
-  },
-  spring: {
-    type: "spring",
-    stiffness: 30,
+    x: -200,
+    y: 200,
+    transition: {
+      duration: 0.6,
+    },
   },
 };
 
