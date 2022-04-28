@@ -25,7 +25,7 @@ export const Card_2 = () => {
         準備中
       </h1>
       <p className="leading-relaxed px-5">
-        Photo booth fam kinfolk cold-pressed sriracha leggings jianbing
+        Photo booth fam kinfolk cold-pressed riracha leggings jianbing
         microdosing tousled waistcoat.
       </p>
     </motion.div>
