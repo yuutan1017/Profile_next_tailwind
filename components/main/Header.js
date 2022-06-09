@@ -7,7 +7,7 @@ export const Header = () => {
   return (
     <header>
       <nav className="w-screen">
-        <div className="flex items-center h-14 sm:px-10 sm:ml-auto py-6 text-slate-900">
+        <div className="overflow-y-hidden flex items-center h-14 sm:px-10 sm:ml-auto py-6 text-slate-900">
           <div className="flex items-center ml-4">
             <Image
               src="/image/YLogIcon.png"

@@ -12,7 +12,7 @@ export default function Contact() {
   const { register, handleSubmit, errors, reset } = useForm();
   const [isOpen, setIsOpen] = useState(false);
 
-  async function onSubmitForm(values) {
+  function onSubmitForm(values) {
     let config = {
       method: "post",
       url: `${process.env.NEXT_PUBLIC_API_URL}/api/contact`,
@@ -22,12 +22,13 @@ export default function Contact() {
       data: values,
     };
     reset();
-    const response = await axios(config);
+    const response = axios(config);
+    console.log(response);
     setIsOpen(true);
   }
 
   return (
-    <Layout>
+    <>
       <motion.div
         initial="hidden"
         animate="visible"
@@ -35,8 +36,8 @@ export default function Contact() {
         variants={contactAnimation}
         className="md:w-7/12 md:p-5 text-center bg-white shadow-2xl w-11/12 rounded font-sans max-w-3xl mt-7"
       >
-        <div className="m-3">
-          <h1 className="text-3xl text-gray-700">Contact Form</h1>
+        <div className="m-4">
+          <h1 className="overflow-y-hidden text-3xl text-gray-700">Contact Form</h1>
         </div>
 
         <div className="md:m-4">
@@ -138,10 +139,6 @@ export default function Contact() {
       </motion.div>
 
       <Modal isOpen={isOpen} setIsOpen={setIsOpen} />
-
-      <div className="container justify-center flex mb-0 mt-8">
-        <LeftArrow title="/portfolio-page" />
-      </div>
-    </Layout>
+    </>
   );
 }

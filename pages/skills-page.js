@@ -13,7 +13,7 @@ import { skillsAnimation } from "../components/animate/Animation";
 export default function Skills() {
   const [openTab, setOpenTab] = useState(1);
   return (
-    <Layout>
+    <>
       <motion.div
         initial="hidden"
         animate="visible"
@@ -78,11 +78,6 @@ export default function Skills() {
           </div>
         </div>
       </motion.div>
-
-      <div className="flex w-full m-4 pt-5 justify-center">
-        <LeftArrow title="/" />
-        <RightArrow title="/portfolio-page" />
-      </div>
-    </Layout>
+    </>
   );
 }

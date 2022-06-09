@@ -5,7 +5,8 @@
 @media screen and (min-width: 1280px) {
   * {
     /* outline: 1px solid magenta;  */
-    overflow: hidden;
+    /* overflow: hidden; */
+    overflow-x: hidden;
   }
 }
 @media screen and (max-width: 1024px) {
